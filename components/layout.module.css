@@ -1,0 +1,346 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+} */
+
+.tabs {
+  position: absolute;
+  height: 48px;
+  top: 16px;
+
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+}
+
+.name {
+  position: absolute;
+  width: 306px;
+  height: 48px;
+  left: 18px;
+  top: 12px;
+
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
+
+.work {
+  width: 51px;
+  left: 1158px;
+  color: #2191FB;
+}
+
+.about {
+  width: 54px;
+  left: 1254px;
+  color: #000000;
+}
+
+.resume {
+  width: 68px;
+  left: 1353px;
+  color: #000000;
+}
+
+.intro {
+  display: inline-block;
+  position: absolute;
+  width: 620px;
+  height: 338px;
+  left: 100px;
+  top: 215px;
+
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 101px;
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
+
+.profile {
+  position: absolute;
+  width: 355px;
+  height: 409px;
+  left: 926px;
+  top: 185px;
+}
+
+.circle {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.bluecircle{
+  left: 846px;
+  top: 111px;
+
+  background: rgba(33, 145, 251, 0.8);
+}
+
+.lightbluecircle{
+  left: 1031px;
+  top: 244px;
+
+  background: rgba(51, 211, 255, 0.8);
+}
+
+.redcircle{
+  left: 834px;
+  top: 321px;
+
+  background: rgba(252, 63, 66, 0.8);
+}
+
+.titles{
+  position: absolute;
+  width: 575px;
+  height: 108px;
+  left: 100px;
+  top: 767px;
+
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 69px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
+
+.barclaysIcon{
+  position: absolute;
+  width: 317.55px;
+  height: 176.04px;
+  left: 143px;
+  top: 954px;
+  border-radius: 30px;
+}
+
+.modernaIcon{
+  position: absolute;
+  width: 264.05px;
+  height: 67.32px;
+  left: 604px;
+  top: 1008px;
+}
+
+.mastercardIcon{
+  position: absolute;
+  width: 231.29px;
+  height: 149.99px;
+  left: 1054.26px;
+  top: 965.19px;
+
+  border-radius: 30px;
+}
+
+.rectangle{
+  position: absolute;
+  width: 404px;
+  height: 252px;
+  border-radius: 30px;
+}
+
+.barclaysRect{
+  top: 916px;
+  left: 100px;
+  background: #00AFE9;
+}
+
+.modernaRect{
+  top: 916px;
+  left: 534px;
+  background: #F5F5F5;
+}
+
+.mastercardRect{
+  top: 916px;
+  left: 968px;
+  background: #000000;
+}
+
+.captions{
+  position: absolute;
+  width: 404px;
+  height: 86px;
+
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  /* or 140% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+.barclays{
+  left: 100px;
+  top: 1168px;
+}
+
+.moderna {
+  left: 541px;
+  top: 1168px;
+}
+
+.mastercard {
+  left: 968px;
+  top: 1168px;
+}
+
+.hackmit{
+  left: 100px;
+  top: 1722px;
+}
+
+.hackRect{
+  position: absolute;
+  width: 404px;
+  height: 252px;
+  left: 100px;
+  top: 1470px;
+}
+
+.kelp{
+  left: 534px;
+  top: 1722px;
+}
+
+.kelpRect{
+  left: 534px;
+  top: 1470px;
+  background: #FC3F42;
+}
+
+.kelpIcon{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 661px;
+  top: 1521px;
+}
+
+.dash{
+  left: 968px;
+  top: 1722px;
+}
+
+.dashRect{
+  left: 968px;
+  top: 1470px;
+  background: #040E51;
+}
+
+.dashIcon{
+  position: absolute;
+  width: 307px;
+  height: 237px;
+  left: 1016px;
+  top: 1478px;
+
+  border-radius: 30px;
+}
+
+.heart{
+  left: 317px;
+  top: 2075px;
+}
+
+.heartRect{
+  left: 317px;
+  top: 1823px;
+  background: #60E1FD;
+}
+
+.heartIcon{
+  position: absolute;
+  width: 169px;
+  height: 233.22px;
+  left: 435px;
+  top: 1843px;
+
+  border-radius: 15px 15px 0px 0px;
+}
+
+.alarm{
+  left: 751px;
+  top: 2075px;
+}
+
+.alarmRect{
+  left: 751px;
+  top: 1823px;
+  background: #43DFC3;
+}
+
+.alarmIcon{
+  position: absolute;
+  width: 353.1px;
+  height: 220px;
+  left: 776px;
+  top: 1839px;
+
+  border-radius: 30px;
+}
+
+.banner{
+  position: absolute;
+  width: 944px;
+  height: 154px;
+  left: 248px;
+  top: 2303px;
+
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
+
+.socials{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 2380px;
+}
+
+
+.backToHome {
+  margin: 3rem 0 0;
+}
