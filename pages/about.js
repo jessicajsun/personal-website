@@ -4,12 +4,12 @@ import Link from 'next/link'
 
 export const siteTitle = 'Jessica Sun'
 
-export default function Layout({ children, home }) {
+Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/images/js.svg" />
-        <title>jessica sun</title>
+        <title>about</title>
 
         <meta
           name="description"
@@ -22,11 +22,11 @@ export default function Layout({ children, home }) {
       <header>
         <div>
           <div className={styles.name}>jessica sun</div>
-          <Link href="/"><a className={`${styles.work} ${styles.tabs}`}>work</a></Link>
-          <Link href="/about"><a className={`${styles.about} ${styles.tabs}`}>about</a></Link>
-          <Link href="/Jessica_Sun.pdf"><a>
+          <div className={`${styles.work} ${styles.tabs}`}>work</div>
+          <div className={`${styles.about} ${styles.tabs}`}>about</div>
+          <a href="/public/Jessica_Sun.pdf">
             <div className={`${styles.resume} ${styles.tabs}`}>resume</div>
-          </a></Link>
+          </a>
 
         </div>
       </header>
@@ -101,7 +101,6 @@ export default function Layout({ children, home }) {
         <img src="/images/projects/alarm.svg" className={styles.alarmIcon}/>
         <div className={`${styles.captions} ${styles.alarm}`}>Smart Alarm</div>
 
-        {children}
       </main>
 
 

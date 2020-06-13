@@ -11,19 +11,6 @@
 
 } */
 
-.tabs {
-  position: absolute;
-  height: 48px;
-  top: 16px;
-
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 0.02em;
-}
-
 .name {
   position: absolute;
   width: 306px;
@@ -39,6 +26,19 @@
   letter-spacing: 0.02em;
 
   color: #000000;
+}
+
+.tabs {
+  position: absolute;
+  height: 48px;
+  top: 16px;
+
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
 }
 
 .work {
