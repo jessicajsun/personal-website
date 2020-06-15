@@ -9,7 +9,7 @@ export default function Layout() {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/images/js.svg" />
-        <title>jessica sun</title>
+        <title>home</title>
 
         <meta
           name="description"
