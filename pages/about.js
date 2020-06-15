@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
+import styles from '../components/about.module.css'
 import Link from 'next/link'
 
 export const siteTitle = 'Jessica Sun'
 
-Layout({ children, home }) {
+export default function About() {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,93 +13,81 @@ Layout({ children, home }) {
 
         <meta
           name="description"
-          content="Jessica Sun"
+          content="About"
         />
-
-        <meta property="og:title" content="jessica sun" key="title" />
+        <meta property="og:title" content="about" key="title" />
       </Head>
 
       <header>
         <div>
-          <div className={styles.name}>jessica sun</div>
-          <div className={`${styles.work} ${styles.tabs}`}>work</div>
-          <div className={`${styles.about} ${styles.tabs}`}>about</div>
-          <a href="/public/Jessica_Sun.pdf">
-            <div className={`${styles.resume} ${styles.tabs}`}>resume</div>
-          </a>
+          <Link href="/"><a><div className={styles.name}>jessica sun</div></a></Link>
+          <Link href="/"><a><div className={`${styles.work} ${styles.tabs}`}>work</div></a></Link>
+          <Link href="/about"><a><div className={`${styles.about} ${styles.tabs}`}>about</div></a></Link>
+          <Link href="/Jessica_Sun.pdf">
+            <a>
+              <div className={`${styles.resume} ${styles.tabs}`}>resume</div>
+            </a>
+          </Link>
 
         </div>
       </header>
 
       <main>
 
-        {/* circles */}
-        <div className={`${styles.circle} ${styles.redcircle}`}></div>
-        <div className={`${styles.circle} ${styles.bluecircle}`}></div>
-        <div className={`${styles.circle} ${styles.lightbluecircle}`}></div>
+        {/* about */}
+        <div className={`${styles.titles} ${styles.aboutme}`}>about me.</div>
 
         {/* me */}
-        <img src="/images/profile.svg" className={styles.profile}/>
+        <div className={styles.aboutCaption}>Caught mid-email in my favorite spot at HackMIT ‘18</div>
+        <img src="/images/athack.svg" className={styles.profile}/>
 
         {/* intro */}
-        <div className={styles.intro}>
-          <div style={{marginBottom: "40px"}}> hi! i’m jessica.</div>
-          <div style={{fontWeight: "normal", fontSize: "40px", lineHeight: "53px"}}>
-            I’m passionate about building
-            <span style={{color: "#FC3F42"}}> impactful products</span> and designing <span style={{color: "#2191FB"}}> engaging experiences.</span>
-          </div>
+        <div className={styles.aboutsection}> Hi, I’m Jessica. I’m originally from St. Louis
+        (<span style={{color: "#FC3F42"}}>Go Cards!</span>),
+        but am currently a rising senior at MIT studying computer science and molecular biology.
+        <p></p>
+        This summer, I’m working at <span style={{color: "#2191FB"}}>Barclays</span>, building XXX.
+        I previously interned at<span style={{color: "#FC3F42"}}> Moderna Therapeutics </span>
+        and<span style={{color: "#FC3F42"}}> Mastercard</span>,
+        building software to predict adverse immune responses and streamline business processes.
+        <p></p>
+        Along with designing meaningful products, I’m the former co-director of <span style={{color: "#2191FB"}}>HackMIT</span>,
+        the student group that organizes MIT’s largest undergraduate hackathon, and a fellow for
+        <span style={{color: "#2191FB"}}> Pear VC</span>, a seed-stage venture capital firm.
+        <p></p>
+        Outside of work and school, I enjoy going on long runs, baking cakes, and discovering new alternative & indie bands.
         </div>
 
 
-        {/*  WORK */}
-        <div className={styles.titles}>where i've worked.</div>
+        {/* FAVORITES */}
+        <div className={`${styles.titles} ${styles.favorites}`}>current favorites.</div>
 
-        {/* barclays */}
-        <div className={`${styles.rectangle} ${styles.barclaysRect}`}></div>
-        <img src="/images/work/barclays.svg" className={styles.barclaysIcon}/>
-        <div className={`${styles.captions} ${styles.barclays}`}>Barclays</div>
+        {/* music */}
+        <a href= "https://open.spotify.com/user/cellist777?si=XiXnREQ6TZu5palfc6jUxw">
+          <div className={`${styles.circle} ${styles.bluecircle}`}>
+            <img src="/images/favorites/music-library.svg" className={styles.icon}/>
+          </div>
+        </a>
+        <div className={`${styles.fav} ${styles.music}`}>“WESTWORLD” by EVAN GIIA and “Nebraska” by Oh Wonder</div>
 
-        {/* moderna */}
-        <div className={`${styles.rectangle} ${styles.modernaRect}`}></div>
-        <img src="/images/work/moderna.svg" className={styles.modernaIcon}/>
-        <div className={`${styles.captions} ${styles.moderna}`}>Moderna Therapeutics</div>
+        {/* food */}
+        <div className={`${styles.circle} ${styles.redcircle}`}>
+          <img src="/images/favorites/bread.svg" className={styles.icon}/>
+        </div>
+        <div className={`${styles.fav} ${styles.food}`}>Fish tacos, corn-on-the-cob, and key lime pie</div>
 
+        {/* book */}
+        <div className={`${styles.circle} ${styles.lightbluecircle}`}>
+            <img src="/images/favorites/book.svg" className={styles.icon}/>
+        </div>
+        <div className={`${styles.fav} ${styles.book}`}>Trick Mirror: Reflections on Self-Delusion by Jia Tolentino</div>
 
-        {/* mastercard */}
-        <div className={`${styles.rectangle} ${styles.mastercardRect}`}></div>
-        <img src="/images/work/mastercard.svg" className={styles.mastercardIcon}/>
-        <div className={`${styles.captions} ${styles.mastercard}`}>Mastercard</div>
-
-
-        {/* PROJECTS */}
-        <div className={styles.titles} style={{top: "1321px"}}>what i've made.</div>
-
-
-        {/* hackmit */}
-        <img src="/images/projects/hackmit.svg" className={styles.hackRect}/>
-        <div className={`${styles.captions} ${styles.hackmit}`}>HackMIT</div>
-
-
-        {/* kelp */}
-        <div className={`${styles.rectangle} ${styles.kelpRect}`}></div>
-        <img src="/images/projects/kelp.svg" className={styles.kelpIcon}/>
-        <div className={`${styles.captions} ${styles.kelp}`}>Kelp</div>
-
-
-        {/* dash */}
-        <div className={`${styles.rectangle} ${styles.dashRect}`}></div>
-        <img src="/images/projects/dash.svg" className={styles.dashIcon}/>
-        <div className={`${styles.captions} ${styles.dash}`}>Morning Dashboard</div>
-
-        {/* heartsmart socks */}
-        <div className={`${styles.rectangle} ${styles.heartRect}`}></div>
-        <img src="/images/projects/heartsmart.svg" className={styles.heartIcon}/>
-        <div className={`${styles.captions} ${styles.heart}`}>HeartSmart Socks</div>
-
-        {/* smart alarm */}
-        <div className={`${styles.rectangle} ${styles.alarmRect}`}></div>
-        <img src="/images/projects/alarm.svg" className={styles.alarmIcon}/>
-        <div className={`${styles.captions} ${styles.alarm}`}>Smart Alarm</div>
+        {/* location */}
+        <div className={styles.smlightbluecircle}>
+          <img src="/images/favorites/map-pin-location.svg" className={styles.locationicon}/>
+        </div>
+        <img src="/images/favorites/denali.svg" className={styles.locationpic}/>
+        <div className={styles.locationCaption}>Denali National Park, Alaska</div>
 
       </main>
 
@@ -128,14 +116,6 @@ Layout({ children, home }) {
           <img src="/images/socials/github.svg" className={styles.socials} style={{left: "962px"}}/>
         </a>
 
-
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
     </div>
   )
 }

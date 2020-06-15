@@ -47,6 +47,10 @@
   color: #2191FB;
 }
 
+.about:hover, .resume:hover{
+  color: #FC3F42;
+}
+
 .about {
   width: 54px;
   left: 1254px;
@@ -133,28 +137,28 @@
 }
 
 .barclaysIcon{
-  position: absolute;
+  position: relative;
   width: 317.55px;
   height: 176.04px;
-  left: 143px;
-  top: 954px;
+  left: 43px;
+  top: 38px;
   border-radius: 30px;
 }
 
 .modernaIcon{
-  position: absolute;
+  position: relative;
   width: 264.05px;
   height: 67.32px;
-  left: 604px;
-  top: 1008px;
+  left: 70px;
+  top: 92px;
 }
 
 .mastercardIcon{
-  position: absolute;
+  position: relative;
   width: 231.29px;
   height: 149.99px;
-  left: 1054.26px;
-  top: 965.19px;
+  left: 86px;
+  top: 51px;
 
   border-radius: 30px;
 }
@@ -164,6 +168,16 @@
   width: 404px;
   height: 252px;
   border-radius: 30px;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover{
+  transform: scale(1.05);
+  position: relative;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
 }
 
 .barclaysRect{
@@ -226,11 +240,9 @@
 }
 
 .hackRect{
-  position: absolute;
-  width: 404px;
-  height: 252px;
   left: 100px;
   top: 1470px;
+  border-radius: 30px;
 }
 
 .kelp{
@@ -245,11 +257,11 @@
 }
 
 .kelpIcon{
-  position: absolute;
+  position: relative;
   width: 150px;
   height: 150px;
-  left: 661px;
-  top: 1521px;
+  left: 127px;
+  top: 51px;
 }
 
 .dash{
@@ -264,11 +276,11 @@
 }
 
 .dashIcon{
-  position: absolute;
+  position: relative;
   width: 307px;
   height: 237px;
-  left: 1016px;
-  top: 1478px;
+  left: 48px;
+  top: 8px;
 
   border-radius: 30px;
 }
@@ -285,11 +297,11 @@
 }
 
 .heartIcon{
-  position: absolute;
+  position: relative;
   width: 169px;
   height: 233.22px;
-  left: 435px;
-  top: 1843px;
+  left: 118px;
+  top: 20px;
 
   border-radius: 15px 15px 0px 0px;
 }
@@ -306,11 +318,11 @@
 }
 
 .alarmIcon{
-  position: absolute;
+  position: relative;
   width: 353.1px;
   height: 220px;
-  left: 776px;
-  top: 1839px;
+  left: 25px;
+  top: 16px;
 
   border-radius: 30px;
 }

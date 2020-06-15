@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const siteTitle = 'Jessica Sun'
 
-export default function Layout({ children, home }) {
+export default function Layout() {
   return (
     <div className={styles.container}>
       <Head>
@@ -21,12 +21,14 @@ export default function Layout({ children, home }) {
 
       <header>
         <div>
-          <div className={styles.name}>jessica sun</div>
-          <Link href="/"><a className={`${styles.work} ${styles.tabs}`}>work</a></Link>
-          <Link href="/about"><a className={`${styles.about} ${styles.tabs}`}>about</a></Link>
-          <Link href="/Jessica_Sun.pdf"><a>
-            <div className={`${styles.resume} ${styles.tabs}`}>resume</div>
-          </a></Link>
+          <Link href="/"><a><div className={styles.name}>jessica sun</div></a></Link>
+          <Link href="/" style={{ textDecoration: 'none' }}><a><div className={`${styles.work} ${styles.tabs}`}>work</div></a></Link>
+          <Link href="/about"><a><div className={`${styles.about} ${styles.tabs}`}>about</div></a></Link>
+          <Link href="/Jessica_Sun.pdf">
+            <a>
+              <div className={`${styles.resume} ${styles.tabs}`}>resume</div>
+            </a>
+          </Link>
 
         </div>
       </header>
@@ -55,19 +57,22 @@ export default function Layout({ children, home }) {
         <div className={styles.titles}>where i've worked.</div>
 
         {/* barclays */}
-        <div className={`${styles.rectangle} ${styles.barclaysRect}`}></div>
-        <img src="/images/work/barclays.svg" className={styles.barclaysIcon}/>
+        <div className={`${styles.rectangle} ${styles.barclaysRect} ${styles.grow}`}>
+          <img src="/images/work/barclays.svg" className={styles.barclaysIcon}/>
+        </div>
         <div className={`${styles.captions} ${styles.barclays}`}>Barclays</div>
 
         {/* moderna */}
-        <div className={`${styles.rectangle} ${styles.modernaRect}`}></div>
-        <img src="/images/work/moderna.svg" className={styles.modernaIcon}/>
+        <div className={`${styles.rectangle} ${styles.modernaRect} ${styles.grow}`}>
+            <img src="/images/work/moderna.svg" className={styles.modernaIcon}/>
+        </div>
         <div className={`${styles.captions} ${styles.moderna}`}>Moderna Therapeutics</div>
 
 
         {/* mastercard */}
-        <div className={`${styles.rectangle} ${styles.mastercardRect}`}></div>
-        <img src="/images/work/mastercard.svg" className={styles.mastercardIcon}/>
+        <div className={`${styles.rectangle} ${styles.mastercardRect} ${styles.grow}`}>
+            <img src="/images/work/mastercard.svg" className={styles.mastercardIcon}/>
+        </div>
         <div className={`${styles.captions} ${styles.mastercard}`}>Mastercard</div>
 
 
@@ -76,32 +81,35 @@ export default function Layout({ children, home }) {
 
 
         {/* hackmit */}
-        <img src="/images/projects/hackmit.svg" className={styles.hackRect}/>
+        <img src="/images/projects/hackmit.svg" className={`${styles.rectangle} ${styles.hackRect} ${styles.grow}`}/>
         <div className={`${styles.captions} ${styles.hackmit}`}>HackMIT</div>
 
 
         {/* kelp */}
-        <div className={`${styles.rectangle} ${styles.kelpRect}`}></div>
-        <img src="/images/projects/kelp.svg" className={styles.kelpIcon}/>
+        <div className={`${styles.rectangle} ${styles.kelpRect} ${styles.grow}`}>
+          <img src="/images/projects/kelp.svg" className={styles.kelpIcon}/>
+        </div>
         <div className={`${styles.captions} ${styles.kelp}`}>Kelp</div>
 
 
         {/* dash */}
-        <div className={`${styles.rectangle} ${styles.dashRect}`}></div>
-        <img src="/images/projects/dash.svg" className={styles.dashIcon}/>
+        <div className={`${styles.rectangle} ${styles.dashRect} ${styles.grow}`}>
+          <img src="/images/projects/dash.svg" className={styles.dashIcon}/>
+        </div>
         <div className={`${styles.captions} ${styles.dash}`}>Morning Dashboard</div>
 
         {/* heartsmart socks */}
-        <div className={`${styles.rectangle} ${styles.heartRect}`}></div>
-        <img src="/images/projects/heartsmart.svg" className={styles.heartIcon}/>
+        <div className={`${styles.rectangle} ${styles.heartRect} ${styles.grow}`}>
+          <img src="/images/projects/heartsmart.svg" className={styles.heartIcon}/>
+        </div>
         <div className={`${styles.captions} ${styles.heart}`}>HeartSmart Socks</div>
 
         {/* smart alarm */}
-        <div className={`${styles.rectangle} ${styles.alarmRect}`}></div>
-        <img src="/images/projects/alarm.svg" className={styles.alarmIcon}/>
+        <div className={`${styles.rectangle} ${styles.alarmRect} ${styles.grow}`}>
+            <img src="/images/projects/alarm.svg" className={styles.alarmIcon}/>
+        </div>
         <div className={`${styles.captions} ${styles.alarm}`}>Smart Alarm</div>
 
-        {children}
       </main>
 
 
@@ -122,21 +130,13 @@ export default function Layout({ children, home }) {
         </a>
 
         <a href="https://www.facebook.com/jessjsun">
-          <img src="/images/socials/facebook.svg" className={styles.socials} style={{left: "831px"}}/>
+          <img src="/images/socials/facebook.svg" className={styles.socials} style={{left: "831px"}} onMouseOver={styles.socials}/>
         </a>
 
         <a href="https://github.com/jessicajsun">
           <img src="/images/socials/github.svg" className={styles.socials} style={{left: "962px"}}/>
         </a>
 
-
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
     </div>
   )
 }
