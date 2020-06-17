@@ -28,6 +28,12 @@
   color: #000000;
 }
 
+@media screen and (max-width: 767px) {
+  .name {
+    color: red;
+  }
+}
+
 .tabs {
   position: absolute;
   height: 48px;
