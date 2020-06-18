@@ -128,7 +128,8 @@ export default class Layout extends React.Component{
 
       </section>
 
-      <section>
+      {/* PROJECTS */}
+      <section className={styles.projects}>
 
         <div className={styles.titles}>what i've made.</div>
 
@@ -144,7 +145,7 @@ export default class Layout extends React.Component{
 
           {/* kelp */}
           <div className={styles.item}>
-            <div className={`${styles.rectangle} ${styles.kelpRect} ${styles.grow}`}>
+            <div className={`${styles.rectangle} ${styles.kelpRect} ${styles.grow} ${styles.cappedSize}`}>
               <img src="/images/projects/kelp.svg"/>
             </div>
             <div className={styles.captions}>Kelp</div>
@@ -165,7 +166,7 @@ export default class Layout extends React.Component{
           {/* heartsmart socks */}
           <div className={styles.item}>
             <div className={`${styles.rectangle} ${styles.heartRect} ${styles.grow}`}>
-              <img src="/images/projects/heartsmart.svg" className={styles.heartIcon}/>
+              <img src="/images/projects/heartsmart.png" className={styles.heartIcon}/>
             </div>
             <div className={styles.captions}>HeartSmart Socks</div>
           </div>
@@ -173,7 +174,7 @@ export default class Layout extends React.Component{
           {/* smart alarm */}
           <div className={styles.item}>
             <div className={`${styles.rectangle} ${styles.alarmRect} ${styles.grow}`}>
-                <img src="/images/projects/alarm.svg" className={styles.alarmIcon}/>
+                <img src="/images/projects/alarm.png" className={styles.alarmIcon}/>
             </div>
             <div className={styles.captions}>Smart Alarm</div>
           </div>
@@ -183,10 +184,56 @@ export default class Layout extends React.Component{
 
       </section>
 
-
-
-
       </main>
+
+      <footer className={styles.banner}>
+
+        <div className={styles.bottomBlurb}>
+          <div className={styles.connect}>connect with me!</div>
+          <div className={styles.chat}>I’m always down to chat over a nice cup of tea.</div>
+        </div>
+
+        <section className={styles.socials}>
+
+          <div className={styles.socialIcon}>
+            <a href="mailto:jessjs@mit.edu">
+              <i class="far fa-envelope fa-2x"></i>
+            </a>
+          </div>
+
+          <div className={styles.socialIcon}>
+            <a href="https://www.linkedin.com/in/jessicajsun/">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </div>
+
+          <div className={styles.socialIcon}>
+            <a href="https://www.instagram.com/jessjsun/">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </div>
+
+          <div className={styles.socialIcon}>
+            <a href="https://www.facebook.com/jessjsun">
+              <i class="fab fa-facebook-square fa-2x"></i>
+            </a>
+          </div>
+
+          <div className={styles.socialIcon}>
+            <a href="https://github.com/jessicajsun">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </div>
+
+        </section>
+
+
+
+      </footer>
+
+
+
+
 
       </div>
   )

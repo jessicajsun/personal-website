@@ -211,6 +211,7 @@
 @media screen and (max-width:767px) {
   .topPanel{
     flex-direction: column;
+    margin-bottom: 50px;
   }
 
   .intro {
@@ -299,13 +300,27 @@
   max-width: 75%;
 }
 
+.dashRect > img {
+  max-height: 100%;
+}
+
 .hackRect > img{
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
   object-fit: cover;
+}
 
+.heartRect > img {
+  max-height: 100%;
+  max-height: 93%;
+  margin-top: auto;
+}
+
+.alarmRect > img {
+  max-height: 90%;
+  max-width: 90%;
 }
 
 
@@ -325,10 +340,12 @@
   transition: all .2s ease-in-out;
 }
 
-.grow:hover{
-  transform: scale(1.05);
-  position: relative;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+@media screen and (min-width:768px) {
+  .grow:hover{
+    transform: scale(1.05);
+    position: relative;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .captions{
@@ -347,7 +364,16 @@
   color: #000000;
 }
 
+
 @media screen and (max-width:767px) {
+  .work{
+    margin-bottom: 40px;
+  }
+
+  .captions{
+    line-height: 25px;
+  }
+
   .titles{
     margin-left: inherit;
     margin-right: inherit;
@@ -377,9 +403,21 @@
     font-size: 20px;
   }
 
+  .grow:active{
+    transform: scale(1.05);
+    position: relative;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  }
+
+}
 
 
-
+.projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
 }
 
 .hackRect{
@@ -410,31 +448,57 @@
   border-radius: 30px;
 }
 
-.banner{
-  position: absolute;
-  width: 944px;
-  height: 154px;
-  left: 248px;
-  top: 2303px;
+@media screen and (max-width:767px) {
+  .projects{
+    margin-bottom: 40px;
+  }
+}
 
-  font-family: Source Sans Pro;
-  font-style: normal;
+
+.banner{
+  margin-top: 150px;
+}
+
+.bottomBlurb{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.connect{
+  max-width: 475px;
+  margin-left: auto;
+  text-align: right;
   font-weight: bold;
   font-size: 30px;
   line-height: 38px;
-  text-align: center;
   letter-spacing: 0.02em;
+  padding-right: 15px;
+}
 
-  color: #000000;
+.chat{
+  max-width: 650px;
+  margin-right: auto;
+  text-align: left;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
 }
 
 .socials{
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 2380px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+  margin-bottom: 65px;
 }
 
-.backToHome {
-  margin: 3rem 0 0;
+.socialIcon:hover > a > i {
+  color: #FC3F42;
 }
