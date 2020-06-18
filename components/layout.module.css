@@ -499,6 +499,48 @@
   margin-bottom: 65px;
 }
 
-.socialIcon:hover > a > i {
-  color: #FC3F42;
+@media screen and (max-width:767px) {
+  .banner{
+    margin-top: 60px;
+  }
+
+  .bottomBlurb{
+    flex-direction: column;
+  }
+
+  .connect{
+    padding-left: 40px;
+    text-align: left;
+    margin-left: inherit;
+    margin-right: auto;
+    padding-right: 0px;
+    max-width: 650px;
+    margin-bottom: 10px;
+
+  }
+
+  .chat{
+    width: 100%;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .socials{
+    padding-left: 40px;
+    margin-left: inherit;
+    margin-right: inherit;
+    max-width: 300px;
+  }
+
+  .socialIcon:active > a > i {
+    color: #FC3F42;
+  }
+}
+
+
+@media screen and (min-width:768px) {
+  .socialIcon:hover > a > i {
+    color: #FC3F42;
+  }
 }
