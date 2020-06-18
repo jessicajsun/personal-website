@@ -11,6 +11,10 @@
 
 } */
 
+.menu{
+  display: none;
+}
+
 .navBar{
   list-style-type: none;
   display: flex;
@@ -21,30 +25,6 @@
   margin-bottom: 50px;
   padding-left: 30px;
   padding-right: 5px;
-}
-
-.navItems{
-  list-style-type: none;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  padding-left: 40px;
-  flex-basis: 400px;
-}
-
-
-.dropdown{
-
-}
-
-.menu{
-  display: none;
-}
-
-.menuActive{
-}
-
-.navClosed{
 }
 
 .name {
@@ -58,6 +38,15 @@
   letter-spacing: 0.02em;
 
   color: #000000;
+}
+
+.navItems{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding-left: 40px;
+  flex-basis: 400px;
 }
 
 .tab {
@@ -102,19 +91,18 @@
     left: 0px;
     right: 0px;
     padding-left: 0px;
-    padding-top: 70px;
+    padding-top: 80px;
     background-color: #ffffff;
   }
   .name{
     margin-top: 12px;
     z-index: 3;
-    font-size: 20px;
+    font-size: 22px;
   }
   .tab{
-    font-size: 15px;
     flex-basis: 100%;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     background-color: #ffffff;
   }
 
@@ -171,11 +159,6 @@
 
 }
 
-@media screen and (min-width:1600px) {
-  .tab{
-    font-size: 25px;
-  }
-}
 
 .topPanel{
   display: flex;
@@ -183,6 +166,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+  margin-bottom: 150px;
 }
 
 .intro {
@@ -224,13 +208,6 @@
   padding-left: 120px;
 }
 
-
-@media screen and (max-width:992px) {
-  .intro{
-    font-size: 60px;
-  }
-}
-
 @media screen and (max-width:767px) {
   .topPanel{
     flex-direction: column;
@@ -242,10 +219,10 @@
     width: 100%;
     padding-left: 40px;
     margin-left: inherit;
-    margin-top: 35px;
+    margin-top: 15px;
     max-width: 650px;
-    max-height: 250px;
-    padding-bottom: 20px;
+    max-height: 230px;
+    padding-bottom: 0px;
   }
 
   .hi{
@@ -267,85 +244,82 @@
     padding-left: 0px;
   }
 
-  .threeitemrow{
-    flex-direction: column;
-  }
+}
 
-  .item{
-    width: 90vw;
-  }
 
-  .rectangle{
-    height: 60vw;
-  }
+
+.work{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.titles{
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 69px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+  padding-left: 30px;
+  letter-spacing: 0.02em;
+  margin-bottom: 60px;
 }
 
 .threeitemrow{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+  padding-left: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-.work{
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 100%;
+  margin-bottom: 20px;
 }
 
 .item{
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 25vw;
+  width: 30vw;
+  padding-right: 30px;
 }
 
 .rectangle{
-  height: 18vw;
-  border-radius: 30px;
-  background-color: black;
-}
-
-.titles{
-
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 55px;
-  line-height: 69px;
+  height: 17vw;
   display: flex;
   align-items: center;
-  letter-spacing: 0.02em;
-
-  color: #000000;
-}
-
-.barclaysIcon{
-  position: relative;
-  width: 317.55px;
-  height: 176.04px;
-  left: 43px;
-  top: 38px;
+  justify-content: center;
   border-radius: 30px;
 }
 
-.modernaIcon{
-  position: relative;
-  width: 264.05px;
-  height: 67.32px;
-  left: 70px;
-  top: 92px;
+.cappedSize > img {
+  max-height: 75%;
+  max-width: 75%;
 }
 
-.mastercardIcon{
-  position: relative;
-  width: 231.29px;
-  height: 149.99px;
-  left: 86px;
-  top: 51px;
+.hackRect > img{
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
 
-  border-radius: 30px;
 }
 
+
+.barclaysRect{
+  background: #00AFE9;
+}
+
+.modernaRect{
+  background: #F5F5F5;
+}
+
+.mastercardRect{
+  background: #000000;
+}
 
 .grow {
   transition: all .2s ease-in-out;
@@ -357,28 +331,7 @@
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
 }
 
-.barclaysRect{
-  top: 916px;
-  left: 100px;
-  background: #00AFE9;
-}
-
-.modernaRect{
-  top: 916px;
-  left: 534px;
-  background: #F5F5F5;
-}
-
-.mastercardRect{
-  top: 916px;
-  left: 968px;
-  background: #000000;
-}
-
 .captions{
-
-  font-family: 'Source Sans Pro';
-  font-style: normal;
   font-weight: 600;
   font-size: 25px;
   line-height: 35px;
@@ -386,118 +339,74 @@
 
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
   letter-spacing: 0.05em;
 
+  margin-top: 25px;
+  margin-bottom: 25px;
   color: #000000;
 }
 
-.barclays{
-  left: 100px;
-  top: 1168px;
-}
+@media screen and (max-width:767px) {
+  .titles{
+    margin-left: inherit;
+    margin-right: inherit;
+    padding-left: 40px;
+    font-size: 30px;
+    max-width: 650px;
+    margin-bottom: 25px;
+  }
 
-.moderna {
-  left: 541px;
-  top: 1168px;
-}
+  .threeitemrow{
+    flex-direction: column;
+    margin-left: inherit;
+    margin-right: inherit;
+    padding-left: 25px;
+    max-width: 650px;
+  }
 
-.mastercard {
-  left: 968px;
-  top: 1168px;
-}
+  .item{
+    width: 70vw;
+  }
 
-.hackmit{
-  left: 100px;
-  top: 1722px;
+  .rectangle{
+    height: 35vw;
+  }
+
+  .captions{
+    font-size: 20px;
+  }
+
+
+
+
 }
 
 .hackRect{
-  left: 100px;
-  top: 1470px;
-  border-radius: 30px;
-}
-
-.kelp{
-  left: 534px;
-  top: 1722px;
+  overflow: hidden;
 }
 
 .kelpRect{
-  left: 534px;
-  top: 1470px;
   background: #FC3F42;
 }
 
-.kelpIcon{
-  position: relative;
-  width: 150px;
-  height: 150px;
-  left: 127px;
-  top: 51px;
-}
-
-.dash{
-  left: 968px;
-  top: 1722px;
-}
-
 .dashRect{
-  left: 968px;
-  top: 1470px;
   background: #040E51;
 }
 
-.dashIcon{
-  position: relative;
-  width: 307px;
-  height: 237px;
-  left: 48px;
-  top: 8px;
-
-  border-radius: 30px;
-}
-
-.heart{
-  left: 317px;
-  top: 2075px;
-}
-
 .heartRect{
-  left: 317px;
-  top: 1823px;
   background: #60E1FD;
 }
 
 .heartIcon{
-  position: relative;
-  width: 169px;
-  height: 233.22px;
-  left: 118px;
-  top: 20px;
-
   border-radius: 15px 15px 0px 0px;
 }
 
-.alarm{
-  left: 751px;
-  top: 2075px;
-}
-
 .alarmRect{
-  left: 751px;
-  top: 1823px;
   background: #43DFC3;
 }
 
 .alarmIcon{
-  position: relative;
-  width: 353.1px;
-  height: 220px;
-  left: 25px;
-  top: 16px;
-
   border-radius: 30px;
 }
 

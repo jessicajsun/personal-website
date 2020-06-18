@@ -4,30 +4,6 @@ import Link from 'next/link'
 
 export const siteTitle = 'Jessica Sun'
 
-class Toggle extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {isToggleOn: true};
-
-    // This binding is necessary to make `this` work in the callback
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.setState(state => ({
-      isToggleOn: !state.isToggleOn
-    }));
-  }
-
-  render() {
-    return (
-      <button onClick={this.handleClick}>
-        {this.state.isToggleOn ? 'ON' : 'OFF'}
-      </button>
-    );
-  }
-}
-
 export default class Layout extends React.Component{
   constructor(props){
     super(props);
@@ -46,6 +22,7 @@ export default class Layout extends React.Component{
   render() {
 
     let tabClassName = `${styles.tab} ${this.state.isMenuOpen ? "" : styles.navClosed}`;
+
     let menuButton = this.state.isMenuOpen ?
       <div>
         <span class="fa-stack">
@@ -97,56 +74,117 @@ export default class Layout extends React.Component{
 
       <main>
 
+        <section className={styles.topPanel}>
 
-      <section className={styles.topPanel}>
-
-          {/* left */}
-          <div className={styles.intro}>
-            <div className={styles.hi}> hi! i’m jessica.</div>
-            <div className={styles.blurb}>
-              I’m passionate about building
-              <span style={{color: "#FC3F42"}}> impactful products</span> and designing <span style={{color: "#2191FB"}}> engaging experiences.</span>
+            {/* left */}
+            <div className={styles.intro}>
+              <div className={styles.hi}> hi! i’m jessica.</div>
+              <div className={styles.blurb}>
+                I’m passionate about building
+                <span style={{color: "#FC3F42"}}> impactful products</span> and designing <span style={{color: "#2191FB"}}> engaging experiences.</span>
+              </div>
             </div>
-          </div>
 
-          {/* right */}
-          <div className={styles.circleContainer}>
-            <img src="/images/Group 6.png"/>
-          </div>
+            {/* right */}
+            <div className={styles.circleContainer}>
+              <img src="/images/Group 6.png"/>
+            </div>
 
         </section>
 
 
         {/*  WORK */}
       <section className={styles.work}>
+
         <div className={styles.titles}>where i've worked.</div>
 
         <div className={styles.threeitemrow}>
+
+          {/* barclays */}
           <div className={styles.item}>
-            <div className={`${styles.rectangle} ${styles.barclaysRect} ${styles.grow}`}>
-              {/*<img src="/images/work/barclays.svg" className={styles.barclaysIcon}/>*/}
+            <div className={`${styles.rectangle} ${styles.barclaysRect} ${styles.grow} ${styles.cappedSize}`}>
+              <img src="/images/work/barclays.svg"/>
             </div>
-            <div className={`${styles.captions} ${styles.barclays}`}>Barclays</div>
+            <div className={styles.captions}>Barclays</div>
           </div>
 
-            {/* moderna */}
+          {/* moderna */}
           <div className={styles.item}>
-            <div className={`${styles.rectangle} ${styles.modernaRect} ${styles.grow}`}>
-                {/*<img src="/images/work/moderna.svg" className={styles.modernaIcon}/>*/}
+            <div className={`${styles.rectangle} ${styles.modernaRect} ${styles.grow} ${styles.cappedSize}`}>
+                <img src="/images/work/moderna.png"/>
             </div>
-            <div className={`${styles.captions} ${styles.moderna}`}>Moderna Therapeutics</div>
+            <div className={styles.captions}>Moderna Therapeutics</div>
           </div>
 
-            {/* mastercard */}
+          {/* mastercard */}
           <div className={styles.item}>
-            <div className={`${styles.rectangle} ${styles.mastercardRect} ${styles.grow}`}>
-              {/*<img src="/images/work/mastercard.svg" className={styles.mastercardIcon}/>*/}
+            <div className={`${styles.rectangle} ${styles.mastercardRect} ${styles.grow} ${styles.cappedSize}`}>
+              <img src="/images/work/mastercard.svg"/>
             </div>
-            <div className={`${styles.captions} ${styles.mastercard}`}>Mastercard</div>
+            <div className={styles.captions}>Mastercard</div>
           </div>
+
         </div>
 
       </section>
+
+      <section>
+
+        <div className={styles.titles}>what i've made.</div>
+
+        <div className={styles.threeitemrow}>
+
+          {/* hackmit */}
+          <div className={styles.item}>
+            <div className={`${styles.rectangle} ${styles.hackRect} ${styles.grow}`}>
+              <img src="/images/projects/hack.png"/>
+            </div>
+            <div className={styles.captions}>HackMIT</div>
+          </div>
+
+          {/* kelp */}
+          <div className={styles.item}>
+            <div className={`${styles.rectangle} ${styles.kelpRect} ${styles.grow}`}>
+              <img src="/images/projects/kelp.svg"/>
+            </div>
+            <div className={styles.captions}>Kelp</div>
+          </div>
+
+          {/* dashboard */}
+          <div className={styles.item}>
+            <div className={`${styles.rectangle} ${styles.dashRect} ${styles.grow}`}>
+              <img src="/images/projects/dash.svg"/>
+            </div>
+            <div className={styles.captions}>Morning Dashboard</div>
+          </div>
+
+        </div>
+
+        <div className={styles.threeitemrow}>
+
+          {/* heartsmart socks */}
+          <div className={styles.item}>
+            <div className={`${styles.rectangle} ${styles.heartRect} ${styles.grow}`}>
+              <img src="/images/projects/heartsmart.svg" className={styles.heartIcon}/>
+            </div>
+            <div className={styles.captions}>HeartSmart Socks</div>
+          </div>
+
+          {/* smart alarm */}
+          <div className={styles.item}>
+            <div className={`${styles.rectangle} ${styles.alarmRect} ${styles.grow}`}>
+                <img src="/images/projects/alarm.svg" className={styles.alarmIcon}/>
+            </div>
+            <div className={styles.captions}>Smart Alarm</div>
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+
 
       </main>
 
