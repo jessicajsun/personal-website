@@ -103,7 +103,7 @@ export default class Layout extends React.Component{
           {/* barclays */}
           <div className={styles.item}>
             <div className={`${styles.rectangle} ${styles.barclaysRect} ${styles.grow} ${styles.cappedSize}`}>
-              <img src="/images/work/barclays.svg"/>
+              <img src="/images/work/barclays.jpg"/>
             </div>
             <div className={styles.captions}>Barclays</div>
           </div>
