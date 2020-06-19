@@ -91,7 +91,7 @@
     left: 0px;
     right: 0px;
     padding-left: 0px;
-    padding-top: 80px;
+    padding-top: 95px;
     background-color: #ffffff;
   }
   .name{
@@ -211,7 +211,7 @@
 @media screen and (max-width:767px) {
   .topPanel{
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .intro {
@@ -222,13 +222,14 @@
     margin-left: inherit;
     margin-top: 15px;
     max-width: 650px;
-    max-height: 230px;
+    max-height: 220px;
     padding-bottom: 0px;
   }
 
   .hi{
     font-size: 45px;
     line-height: 57px;
+    margin-bottom: 30px;
   }
 
   .blurb{
