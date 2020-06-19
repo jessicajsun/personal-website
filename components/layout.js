@@ -154,7 +154,7 @@ export default class Layout extends React.Component{
           {/* dashboard */}
           <div className={styles.item}>
             <div className={`${styles.rectangle} ${styles.dashRect} ${styles.grow}`}>
-              <img src="/images/projects/dash.svg"/>
+              <img src="/images/projects/dash.png"/>
             </div>
             <div className={styles.captions}>Morning Dashboard</div>
           </div>
