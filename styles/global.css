@@ -23,7 +23,3 @@ a {
 img {
   max-width: 100%;
 }
-
-svg:hover path{
-  fill: red;
-}

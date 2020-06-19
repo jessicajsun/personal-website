@@ -533,7 +533,7 @@
     max-width: 300px;
   }
 
-  .socialIcon:active > a > i {
+  .socialIcon:hover > a > i {
     color: #FC3F42;
   }
 }
