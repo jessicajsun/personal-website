@@ -1,286 +1,207 @@
-.container {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-/* .header {
+.topPanel{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-
-} */
-
-.name {
-  position: absolute;
-  width: 306px;
-  height: 48px;
-  left: 18px;
-  top: 12px;
-
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 38px;
-  letter-spacing: 0.02em;
-
-  color: #000000;
-}
-
-@media screen and (max-width: 767px) {
-  .name {
-    color: red;
-  }
-}
-
-.tabs {
-  position: absolute;
-  height: 48px;
-  top: 16px;
-
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 0.02em;
-}
-
-.work {
-  width: 51px;
-  left: 1158px;
-  color: #000000;
-}
-
-.work:hover, .resume:hover{
-  color: #FC3F42;
+  justify-content: center;
+  margin-top: 78px;
+  margin-bottom: 150px;
 }
 
 .about {
-  width: 54px;
-  left: 1254px;
-  color: #2191FB;
+  width: 100%;
+  margin-left: auto;
+  max-width: 700px;
+  padding-bottom: 20px;
+  margin-right: 50px;
+
 }
 
-.resume {
-  width: 68px;
-  left: 1353px;
-  color: #000000;
-}
-
-.link{
-  text-decoration: none;
-}
-
-.titles{
-  position: absolute;
-  width: 549px;
-  height: 94px;
-  left: 61px;
-
-  font-family: 'Source Sans Pro';
-  font-style: normal;
+.titleAbout{
   font-weight: bold;
-
-  letter-spacing: 0.02em;
-  color: #000000;
-}
-
-.aboutme {
-  top: 128px;
   font-size: 55px;
   line-height: 69px;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 40px;
 }
 
-.favorites{
-  top: 777px;
-  font-size: 45px;
-  line-height: 57px;
-}
-
-.profile {
-  position: absolute;
-  width: 545px;
-  height: 359px;
-  left: 847px;
-  top: 241px;
-}
-
-.aboutsection{
-  position: absolute;
-  width: 698px;
-  height: 482px;
-  left: 61px;
-  top: 225px;
-
-  font-family: Source Sans Pro;
-  font-style: normal;
+.blurb {
   font-weight: normal;
   font-size: 22px;
   line-height: 37px;
-  /* or 168% */
-
   letter-spacing: 0.02em;
 
+}
+
+.me{
+  width: 100%;
+  margin-left: 50px;
+  margin-right: auto;
+  max-width: 500px;
+}
+
+.captions{
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
   color: #000000;
 }
 
+
+@media screen and (max-width:767px){
+  .topPanel{
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+
+  .titles{
+    order: 1;
+    font-size: 35px;
+    line-height: 44px;
+  }
+
+  .about{
+    margin-left: inherit;
+    margin-right: inherit;
+    max-width: 340px;
+    padding-bottom: 40px;
+  }
+
+  .blurb{
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .me{
+    order: 2;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: inherit;
+    max-width: 340px;
+  }
+
+  .captions{
+    font-size: 13.5px;
+    line-height: 17px;
+  }
+
+  .blurb{
+    order: 3;
+  }
+}
+
+.favs{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleFavorites{
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 57px;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 40px;
+}
+
+.writtenFavs{
+  width: 100%;
+  margin-left: auto;
+  max-width: 800px;
+  padding-bottom: 20px;
+  margin-right: 50px;
+
+}
+
+.favorite{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
 .circle{
-  position: absolute;
   width: 80px;
   height: 80px;
-  left: 61px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bluecircle{
-  top: 871px;
   background: #2191FB;
 }
 
 .redcircle{
-  top: 963px;
   background: #FC3F42;
 }
 
 .lightbluecircle{
-  top: 1055px;
   background: #33D3FF;
 }
 
 .smlightbluecircle{
-  position: absolute;
   width: 40px;
   height: 40px;
-  left: 962px;
-  top: 1103px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #33D3FF;
   border-radius: 50%;
+  margin-right: 20px;
 }
 
-.aboutCaption{
-  position: absolute;
-  width: 545px;
-  height: 43px;
-  left: 847px;
-  top: 615px;
-
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: 0.02em;
-
-  color: #000000;
-}
-
-.locationCaption{
-  position: absolute;
-  width: 261px;
-  height: 30px;
-  left: 1017px;
-  top: 1112px;
-
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 0.02em;
-
-  color: #000000;
-}
-
-
-.fav{
-  font-family: 'Source Sans Pro';
+.favText{
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
   line-height: 31px;
   letter-spacing: 0.02em;
-
-  color: #000000;
+  margin-left: 30px;
 }
 
-.music{
-  position: absolute;
-  width: 700px;
-  height: 40px;
-  left: 175px;
-  top: 896px;
+.location{
+  width: 100%;
+  margin-left: 50px;
+  margin-right: auto;
+  max-width: 400px;
 }
 
-.food{
-  position: absolute;
-  width: 789px;
-  height: 40px;
-  left: 175px;
-  top: 982px;
+.locationText{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
 }
 
-.book{
-  position: absolute;
-  width: 700px;
-  height: 40px;
-  left: 175px;
-  top: 1074px;
+.smCaption{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
 }
 
 .icon{
-  position: relative;
-  width: 50px;
-  height: 50px;
-  left: 15px;
-  top: 15px;
+
 }
 
 .locationicon{
-  position: relative;
-  width: 30px;
-  height: 30px;
-  left: 5px;
-  top: 5px;
+
 }
 
 .locationpic{
-  position: absolute;
-  width: 316.01px;
-  height: 300px;
-  left: 962px;
-  top: 791px;
-}
-
-.banner{
-  position: absolute;
-  width: 944px;
-  height: 154px;
-  left: 248px;
-  top: 1235px;
-
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 38px;
-  text-align: center;
-  letter-spacing: 0.02em;
-
-  color: #000000;
-}
-
-.socials{
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 1312px;
-}
-
-
-.backToHome {
-  margin: 3rem 0 0;
 }
