@@ -43,7 +43,7 @@ export default function About(){
 
           {/* me */}
           <div className={styles.me}>
-            <img src="/images/hack18.jpg"/>
+            <img src="/images/about/hack18.jpg"/>
             <div className={styles.captions}>Caught mid-email in my favorite spot at HackMIT ‘18</div>
           </div>
 
@@ -97,7 +97,7 @@ export default function About(){
 
           {/* location */}
           <div className={styles.location}>
-            <img src="/images/denali.jpg" className={styles.locationpic}/>
+            <img src="/images/about/denali.jpg" className={styles.locationpic}/>
 
             <div className={styles.locationText}>
 
