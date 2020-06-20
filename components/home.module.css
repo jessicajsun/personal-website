@@ -59,7 +59,7 @@
     padding-left: 40px;
     margin-left: inherit;
     margin-top: 5px;
-    max-width: 385px;
+    max-width: 400px;
     max-height: 190px;
     padding-bottom: 0px;
   }
@@ -141,6 +141,7 @@
 
 .dashRect > img {
   max-height: 100%;
+  border-radius: 30px;
 }
 
 .hackRect > img{
