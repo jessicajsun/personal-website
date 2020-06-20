@@ -61,26 +61,33 @@ export default function About(){
             <div className={`${styles.titleFavorites}`}>current favorites.</div>
 
             <div className={styles.favorite}>
-              <a href= "https://open.spotify.com/user/cellist777?si=XiXnREQ6TZu5palfc6jUxw">
-                <div className={`${styles.circle} ${styles.bluecircle}`}>
-                  <i className="fas fa-music fa-inverse fa-2x"></i>
+                <div className={styles.icon}>
+                  <span className="fa-stack">
+                    <i className="fa fa-circle fa-stack-2x" style={{color: '#2191FB'}}></i>
+                    <i className="fas fa-music fa-stack-1x fa-inverse"></i>
+                  </span>
                 </div>
-              </a>
               <div className={styles.favText}>“WESTWORLD” by EVAN GIIA and “Nebraska” by Oh Wonder</div>
             </div>
 
             {/* food */}
             <div className={styles.favorite}>
-              <div className={`${styles.circle} ${styles.redcircle}`}>
-                <i class="fas fa-utensils fa-inverse fa-2x"></i>
+              <div className={styles.icon}>
+                <span className="fa-stack">
+                  <i className="fa fa-circle fa-stack-2x" style={{color: '#FC3F42'}}></i>
+                  <i className="fas fa-utensils fa-stack-1x fa-inverse"></i>
+                </span>
               </div>
               <div className={styles.favText}>Fish tacos, corn-on-the-cob, and key lime pie</div>
             </div>
 
             {/* book */}
             <div className={styles.favorite}>
-              <div className={`${styles.circle} ${styles.lightbluecircle}`}>
-                <i class="fas fa-book fa-inverse fa-2x"></i>
+              <div className={styles.icon}>
+                <span className="fa-stack size">
+                  <i className="fa fa-circle fa-stack-2x" style={{color: '#33D3FF'}}></i>
+                  <i className="fas fa-book fa-stack-1x fa-inverse"></i>
+                </span>
               </div>
               <div className={styles.favText}>Trick Mirror: Reflections on Self-Delusion by Jia Tolentino</div>
             </div>
@@ -92,11 +99,18 @@ export default function About(){
             <img src="/images/favorites/denali.svg" className={styles.locationpic}/>
 
             <div className={styles.locationText}>
-              <div className={styles.smlightbluecircle}>
-                <i class="fas fa-map-marker-alt fa-inverse fa-lg"></i>
+
+              <div className={styles.locationIcon}>
+                <span className="fa-stack">
+                  <i className="fa fa-circle fa-stack-2x" style={{color: '#33D3FF'}}></i>
+                  <i className="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
+                </span>
               </div>
+
               <div className={styles.smCaption}>Denali National Park, Alaska</div>
+
             </div>
+
           </div>
 
         </section>
