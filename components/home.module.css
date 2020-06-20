@@ -87,6 +87,19 @@
 }
 
 @media screen and (min-width:400px) and (max-width:767px) {
+  .intro{
+    max-height: 210px;
+  }
+  .hi{
+    font-size: 50px;
+    line-height: 62px;
+    margin-bottom: 25px;
+  }
+
+  .blurb{
+    font-size: 22px;
+    line-height: 29px;
+  }
   .circleContainer{
     max-width: 300px;
   }
