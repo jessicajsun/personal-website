@@ -60,14 +60,14 @@
     margin-left: inherit;
     margin-top: 15px;
     max-width: 650px;
-    max-height: 220px;
+    max-height: 200px;
     padding-bottom: 0px;
   }
 
   .hi{
     font-size: 45px;
     line-height: 57px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .blurb{
