@@ -80,8 +80,8 @@
   }
 
   .blurb{
-    font-size: 18px;
-    line-height: 31px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .me{
@@ -122,6 +122,32 @@
     line-height: 25px;
   }
 }
+
+@media screen and (min-width:450px) and (max-width:767px) {
+  .titleAbout{
+    font-size: 45px;
+    line-height: 59px;
+  }
+
+  .about{
+    max-width: 400px;
+  }
+
+  .me{
+    max-width: 400px;
+  }
+
+  .blurb{
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  .captions{
+    font-size: 19px;
+    line-height: 27px;
+  }
+}
+
 
 .favs{
   display: flex;
@@ -271,4 +297,30 @@
     line-height: 25px;
   }
 
+}
+
+@media screen and (min-width:450px) and (max-width:767px) {
+  .favs{
+    max-width: 400px;
+  }
+
+  .titleFavorites{
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .favText{
+    font-size: 23px;
+    line-height: 27px;
+    margin-left: 15px;
+  }
+
+  .smCaption{
+    font-size: 23px;
+    line-height: 27px;
+  }
+
+  .locationText{
+    margin-left: 20px;
+  }
 }
