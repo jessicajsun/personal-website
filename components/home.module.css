@@ -59,7 +59,7 @@
     padding-left: 40px;
     margin-left: inherit;
     margin-top: 5px;
-    max-width: 450px;
+    max-width: 460px;
     max-height: 190px;
     padding-bottom: 0px;
   }
@@ -80,10 +80,16 @@
     flex-grow: 50;
     flex-basis: 300px;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     padding-left: 0px;
   }
 
+}
+
+@media screen and (min-width:400px) and (max-width:767px) {
+  .circleContainer{
+    max-width: 300px;
+  }
 }
 
 
