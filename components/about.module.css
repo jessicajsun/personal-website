@@ -151,6 +151,10 @@
   max-width: 400px;
 }
 
+.location > img{
+  width: 80%;
+}
+
 .locationText{
   display: flex;
   flex-direction: row;
@@ -208,6 +212,10 @@
   .location{
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .location > img{
+    width: 100%;
   }
 
 

@@ -9,6 +9,7 @@ export default function About(){
   return (
       <Layout>
 
+
         <Head>
           <title>about</title>
         </Head>
@@ -42,7 +43,7 @@ export default function About(){
 
           {/* me */}
           <div className={styles.me}>
-            <img src="/images/athack.svg"/>
+            <img src="/images/hack18.jpg"/>
             <div className={styles.captions}>Caught mid-email in my favorite spot at HackMIT ‘18</div>
           </div>
 
@@ -96,7 +97,7 @@ export default function About(){
 
           {/* location */}
           <div className={styles.location}>
-            <img src="/images/favorites/denali.svg" className={styles.locationpic}/>
+            <img src="/images/denali.jpg" className={styles.locationpic}/>
 
             <div className={styles.locationText}>
 
