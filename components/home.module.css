@@ -115,7 +115,7 @@
 @media screen and (min-width:769px) and (max-width:992px) {
   .topPanel{
     flex-direction: column;
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 
   .intro {
