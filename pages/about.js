@@ -95,7 +95,7 @@ export default function About(){
 
           {/* location */}
           <div className={styles.location}>
-            <img src="/images/about/denali.jpg" className={styles.locationpic}/>
+            <img src="/images/about/denali.jpg"/>
 
             <div className={styles.locationText}>
 
