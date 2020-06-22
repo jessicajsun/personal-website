@@ -1,6 +1,26 @@
 import Head from 'next/head'
 import styles from './layout.module.css'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+
+function ActiveLink({ children, href }) {
+  const router = useRouter()
+  /*
+  const style = {
+    color: router.pathname === href ?  '#2191FB' : '#000000',
+  }*/
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    router.push(href)
+  }
+
+  return (
+    <a href={href} onClick={handleClick} className={router.pathname === href ? styles.menuActive : styles.menuInactive}>
+      {children}
+    </a>
+  )
+}
 
 export const siteTitle = 'Jessica Sun'
 
@@ -24,13 +44,13 @@ export default class Layout extends React.Component{
     let tabClassName = `${styles.tab} ${this.state.isMenuOpen ? "" : styles.navClosed}`;
 
     let menuButton = this.state.isMenuOpen ?
-      <div>
+      <div className={styles.menu}>
         <span className="fa-stack">
           <i className="fa fa-circle fa-stack-2x" style={{color: '#33D3FF'}}></i>
           <i className="fa fa-bars fa-stack-1x fa-inverse"></i>
         </span>
       </div> :
-      <div>
+      <div className={styles.menu}>
         <span className="fa-stack">
           <i className="fas fa-bars fa-stack-1x"></i>
         </span>
@@ -40,7 +60,7 @@ export default class Layout extends React.Component{
     <div className={styles.container}>
       <Head>
         <script src="https://kit.fontawesome.com/9a2254ebc5.js" crossOrigin="anonymous"></script>
-        <link rel="icon" href="/images/js.svg" />
+        <link rel="icon" href="/favicon.ico" />
         <title>jessica sun</title>
 
         <meta
@@ -55,17 +75,17 @@ export default class Layout extends React.Component{
       {/* top bar */}
 
       <nav>
-        <div onClick={this.menuToggle} className={styles.menu}>
-          {menuButton}
-        </div>
 
         <ul className={styles.navBar}>
           <li className={styles.name}><Link href="/"><a>jessica sun</a></Link></li>
+          <div onClick={this.menuToggle}>
+            {menuButton}
+          </div>
 
           <ul className={`${styles.navItems} ${this.state.isMenuOpen ? `${styles.fadeIn} ${styles.shadow}` : ""}`}>
-            <li className={tabClassName}><Link href="/"><a><div className={styles.home}>work</div></a></Link></li>
-            <li className={tabClassName}><Link href="/about"><a><div className={styles.about}>about</div></a></Link></li>
-            <li className={`${tabClassName}`}><Link href="/Jessica_Sun.pdf"><a><div className={styles.resume}>resume</div></a></Link></li>
+            <li className={tabClassName}><ActiveLink href="/"><div>work</div></ActiveLink></li>
+            <li className={tabClassName}><ActiveLink href="/about"><div>about</div></ActiveLink></li>
+            <li className={`${tabClassName}`}><ActiveLink href="/Jessica_Sun.pdf"><div>resume</div></ActiveLink></li>
           </ul>
         </ul>
 

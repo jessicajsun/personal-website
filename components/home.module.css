@@ -4,127 +4,77 @@
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  margin-bottom: 150px;
+  margin-bottom: 8vw;
 }
 
 .intro {
-  flex-grow: 50;
-  flex-basis: 400px;
   width: 100%;
   margin-left: auto;
   padding-left: 30px;
-  max-width: 650px;
+  padding-right: 30px;
+  max-width: 50%;
   padding-bottom: 20px;
-
 }
 
 .hi{
   font-weight: bold;
-  font-size: 80px;
-  line-height: 101px;
+  font-size: 5.5vw;
+  line-height: 7vw;
   letter-spacing: 0.02em;
-
   margin-bottom: 40px;
   color: #000000;
 }
 
 .blurb {
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 53px;
+  font-weight: 400;
+  font-size: 2.8vw;
+  line-height: 4vw;
   letter-spacing: 0.02em;
   color: #000000;
-
 }
 
 .circleContainer{
-  flex-grow: 50;
-  flex-basis: 400px;
   width: 100%;
   margin-right: auto;
-  max-width: 650px;
-  padding-left: 120px;
+  max-width: 42%;
+  padding-left: 50px;
 }
 
 @media screen and (max-width:767px) {
   .topPanel{
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 20vw;
   }
 
   .intro {
-    flex-grow: 50;
-    flex-basis: 300px;
-    width: 100%;
+    max-width: 90%;
     padding-left: 40px;
-    margin-left: inherit;
-    margin-top: 5px;
-    max-width: 460px;
-    max-height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
     padding-bottom: 0px;
   }
 
   .hi{
-    font-size: 45px;
-    line-height: 57px;
-    margin-bottom: 20px;
-  }
-
-  .blurb{
-    font-size: 20px;
-    line-height: 27px;
-    margin-right: 15px;
-  }
-
-  .circleContainer{
-    margin-right: inherit;
-    flex-grow: 50;
-    flex-basis: 300px;
-    width: 100%;
-    max-width: 250px;
-    padding-left: 0px;
-  }
-
-}
-
-@media screen and (min-width:400px) and (max-width:767px) {
-  .intro{
-    max-height: 210px;
-  }
-  .hi{
-    font-size: 50px;
-    line-height: 62px;
+    font-size: 10vw;
+    line-height: 12.5vw;
     margin-bottom: 25px;
   }
 
   .blurb{
-    font-size: 22px;
-    line-height: 29px;
+    font-size: 4.8vw;
+    line-height: 7vw;
   }
+
   .circleContainer{
-    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    padding-left: 40px;
+    padding-right: 30px;
   }
+
 }
-
-@media screen and (min-width:420px) and (max-width:767px) {
-  .intro{
-    max-height: 250px;
-  }
-  .hi{
-    font-size: 50px;
-    line-height: 62px;
-    margin-bottom: 30px;
-  }
-
-  .blurb{
-    font-size: 25px;
-    line-height: 34px;
-  }
-  .circleContainer{
-    max-width: 300px;
-  }
-}
-
 
 
 .work{
@@ -132,26 +82,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 7vw;
 }
 
 .titles{
   font-weight: bold;
-  font-size: 55px;
-  line-height: 69px;
+  font-size: 4vw;
+  line-height: 5.2vw;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1300px;
+  max-width: 92%;
   padding-left: 30px;
+  padding-right: 30px;
   letter-spacing: 0.02em;
-  margin-bottom: 60px;
+  margin-bottom: 4.2vw;
 }
 
 .threeitemrow{
   margin-left: auto;
   margin-right: auto;
-  max-width: 1300px;
   padding-left: 30px;
   display: flex;
   flex-direction: row;
@@ -162,7 +112,7 @@
 
 .item{
   width: 30vw;
-  padding-right: 30px;
+  padding-right: 2vw;
 }
 
 .rectangle{
@@ -176,6 +126,11 @@
 .cappedSize > img {
   max-height: 75%;
   max-width: 75%;
+}
+
+.cappedSize > svg {
+  max-height: 65%;
+  max-width: 65%;
 }
 
 .dashRect > img {
@@ -202,7 +157,6 @@
   max-width: 90%;
 }
 
-
 .barclaysRect{
   background: #00AFE9;
 }
@@ -225,11 +179,10 @@
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
 }
 
-
 .captions{
   font-weight: 600;
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 1.7vw;
+  line-height: 3.8vw;
   /* or 140% */
 
   display: flex;
@@ -237,8 +190,8 @@
   justify-content: center;
   letter-spacing: 0.05em;
 
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 1.2vw;
+  margin-bottom: 1.2vw;
   color: #000000;
 }
 
@@ -256,21 +209,23 @@
     margin-left: inherit;
     margin-right: inherit;
     padding-left: 40px;
-    font-size: 30px;
-    max-width: 650px;
-    margin-bottom: 25px;
+    padding-right: 30px;
+    font-size: 7vw;
+    line-height: 8vw;
+    margin-bottom: 9vw;
   }
 
   .threeitemrow{
     flex-direction: column;
     margin-left: inherit;
     margin-right: inherit;
-    padding-left: 25px;
-    max-width: 650px;
+    padding-left: 0px;
+    margin-bottom: 0px;
   }
 
   .item{
     width: 70vw;
+    max-width: 92%;
   }
 
   .rectangle{
@@ -278,7 +233,10 @@
   }
 
   .captions{
-    font-size: 20px;
+    font-size: 4.5vw;
+    line-height: 10vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
   }
 }
 
@@ -288,7 +246,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 7vw;
 }
 
 .hackRect{
@@ -317,10 +275,4 @@
 
 .alarmIcon{
   border-radius: 30px;
-}
-
-@media screen and (max-width:767px) {
-  .projects{
-    margin-bottom: 40px;
-  }
 }

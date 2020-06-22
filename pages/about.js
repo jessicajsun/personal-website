@@ -9,7 +9,6 @@ export default function About(){
   return (
       <Layout>
 
-
         <Head>
           <title>about</title>
         </Head>

@@ -4,13 +4,6 @@
   height: auto;
 }
 
-/* .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-} */
-
 .menu{
   display: none;
 }
@@ -21,23 +14,21 @@
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-around;
-  margin-top: 12px;
+  margin-top: 1vw;
   margin-bottom: 50px;
-  padding-left: 30px;
+  padding-left: 2vw;
   padding-right: 5px;
 }
 
 .name {
   order: 0;
   flex-grow: 10;
-  flex-basis: 1400px;
+  flex-basis: 1300px;
   margin-left: auto;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 2.2vw;
+  line-height: 3vw;
   letter-spacing: 0.02em;
-
-  color: #000000;
 }
 
 .navItems{
@@ -45,8 +36,11 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
+  justify-content: space-between;
   padding-left: 40px;
   flex-basis: 400px;
+  margin-right: auto;
+  flex-grow: 2;
 }
 
 .tab {
@@ -54,31 +48,25 @@
   flex-grow: 1;
   flex-basis: 150px;
   font-weight: 600;
-  font-size: 21px;
-  line-height: 38px;
+  font-size: 1.5vw;
+  line-height: 3vw;
   letter-spacing: 0.02em;
 }
 
-.home {
+.menuActive {
   color: #2191FB;
 }
 
-.about:hover, .resume:hover{
+.menuInactive:hover{
   color: #FC3F42;
-}
-
-.about {
-  color: #000000;
-}
-
-.resume {
-  color: #000000;
 }
 
 @media screen and (max-width:767px) {
   .navBar{
     padding-left: 25px;
+    margin-bottom: 80px;
     margin-top: 0px;
+
   }
 
   .navItems{
@@ -91,30 +79,32 @@
     left: 0px;
     right: 0px;
     padding-left: 0px;
-    padding-top: 95px;
+    padding-top: 26vw;
     background-color: #ffffff;
   }
   .name{
-    margin-top: 12px;
+    margin-top: 15px;
     z-index: 3;
-    font-size: 22px;
+    font-size: 5vw;
+    line-height: 6vw;
   }
   .tab{
     flex-basis: 100%;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 10vw;
     background-color: #ffffff;
+    font-size: 5vw;
+    line-height: 5vw;
   }
 
   .menu{
-    margin-top: 12px;
+    margin-top: 11px;
     z-index: 3;
     display: flex;
     align-items: flex-end;
     width: 100%;
-    max-width: 50px;
-    flex-basis: 50px;
-    flex-grow: 2;
+    font-size: 4vw;
+    line-height: 5vw;
     float: right;
     margin-right: 5px;
     position: relative;
@@ -147,20 +137,14 @@
 
 }
 
-@media screen and (min-width:420px) and (max-width:767px) {
-  .name{
-    font-size: 25px;
-  }
-
-  .tab{
-    font-size: 25px;
-    margin-bottom: 30px;
+@media screen and (min-width:550px) and (max-width:767px) {
+  .navItems{
+    padding-top: 20vw;
   }
 }
 
-
 .banner{
-  margin-top: 150px;
+  margin-top: 10vw;
 }
 
 .bottomBlurb{
@@ -168,27 +152,25 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 3vw;
 }
 
 .connect{
-  max-width: 475px;
   margin-left: auto;
   text-align: right;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 2vw;
+  line-height: 3vw;
   letter-spacing: 0.02em;
-  padding-right: 15px;
+  padding-right: 1.2vw;
 }
 
 .chat{
-  max-width: 650px;
   margin-right: auto;
   text-align: left;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 31px;
+  font-size: 1.5vw;
+  line-height: 2.7vw;
   letter-spacing: 0.02em;
 }
 
@@ -199,8 +181,9 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  max-width: 650px;
-  margin-bottom: 65px;
+  max-width: 47%;
+  font-size: 1.3vw;
+  margin-bottom: 5vw;
 }
 
 .socialIcon:hover > a > i {
@@ -209,36 +192,43 @@
 
 @media screen and (max-width:767px) {
   .banner{
-    margin-top: 60px;
+    margin-top: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .bottomBlurb{
     flex-direction: column;
+    margin-bottom: 8vw;
   }
 
   .connect{
-    padding-left: 40px;
     text-align: left;
     margin-left: inherit;
     margin-right: auto;
+    font-size: 7vw;
+    line-height: 8vw;
     padding-right: 0px;
-    max-width: 650px;
-    margin-bottom: 10px;
+    margin-bottom: 3.5vw;
 
   }
 
   .chat{
     width: 100%;
     margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-right: 10vw;
+    font-size: 5vw;
+    line-height: 5.7vw;
   }
 
   .socials{
-    padding-left: 40px;
     margin-left: inherit;
     margin-right: inherit;
-    max-width: 300px;
+    max-width: 100%;
+    font-size: 4.8vw;
+    margin-bottom: 20vw;
   }
 
 }
