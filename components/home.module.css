@@ -276,3 +276,9 @@
 .alarmIcon{
   border-radius: 30px;
 }
+
+@media screen and (max-width:767px) {
+  .projects{
+    margin-bottom: 20vw;
+  }
+}

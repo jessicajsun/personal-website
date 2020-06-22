@@ -49,17 +49,16 @@ export default function About(){
         </section>
 
 
-          {/* FAVORITES */}
+        {/* FAVORITES */}
 
 
         <section className={styles.favs}>
-
-          {/* music */}
 
           <div className={styles.writtenFavs}>
 
             <div className={`${styles.titleFavorites}`}>current favorites.</div>
 
+            {/* music */}
             <div className={styles.favorite}>
                 <div className={styles.icon}>
                   <span className="fa-stack">

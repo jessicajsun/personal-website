@@ -3,23 +3,22 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 78px;
-  margin-bottom: 120px;
+  margin-top: 5.5vw;
+  margin-bottom: 10vw;
 }
 
 .about {
   width: 100%;
   margin-left: auto;
-  max-width: 700px;
-  padding-bottom: 20px;
-  margin-right: 50px;
+  max-width: 55%;
+  padding-right: 5vw;
 
 }
 
 .titleAbout{
   font-weight: bold;
-  font-size: 55px;
-  line-height: 69px;
+  font-size: 3.8vw;
+  line-height: 4vw;
   letter-spacing: 0.02em;
 
   margin-bottom: 40px;
@@ -27,24 +26,23 @@
 
 .blurb {
   font-weight: normal;
-  font-size: 22px;
-  line-height: 37px;
+  font-size: 1.5vw;
+  line-height: 2.5vw;
   letter-spacing: 0.02em;
 
 }
 
 .me{
   width: 100%;
-  margin-left: 50px;
   margin-right: auto;
-  max-width: 500px;
+  max-width: 35%;
 }
 
 .captions{
   font-weight: 600;
   font-style: normal;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 1.35vw;
+  line-height: 2vw;
   text-align: center;
 
   display: flex;
@@ -52,8 +50,8 @@
   justify-content: center;
   letter-spacing: 0.05em;
 
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 1.2vw;
+  margin-bottom: 1.2vw;
   color: #000000;
 }
 
@@ -61,27 +59,26 @@
 @media screen and (max-width:767px){
   .topPanel{
     flex-direction: column-reverse;
-    margin-bottom: 40px;
-    margin-top: 70px;
+    margin-top: 0px;
   }
 
   .titleAbout{
-    font-size: 40px;
-    line-height: 49px;
-    margin-bottom: 30px;
-    margin-top: 40px;
+    font-size: 10vw;
+    line-height: 10.2vw;
+    margin-top: 8vw;
   }
 
   .about{
     margin-left: inherit;
     margin-right: inherit;
-    max-width: 340px;
+    max-width: 83%;
+    padding-right: 0vw;
     padding-bottom: 40px;
   }
 
   .blurb{
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 4.4vw;
+    line-height: 8vw;
   }
 
   .me{
@@ -92,60 +89,22 @@
   }
 
   .captions{
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 4vw;
+    line-height: 6vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
   }
 
 }
 
-@media screen and (min-width:400px) and (max-width:767px) {
-  .titleAbout{
-    font-size: 40px;
-    line-height: 54px;
-  }
-
-  .about{
-    max-width: 350px;
-  }
-
-  .me{
-    max-width: 350px;
-  }
-
-  .blurb{
-    font-size: 19px;
-    line-height: 32px;
-  }
-
+@media screen and (min-width:635px) and (max-width:767px){
   .captions{
-    font-size: 18px;
-    line-height: 25px;
-  }
-}
-
-@media screen and (min-width:450px) and (max-width:767px) {
-  .titleAbout{
-    font-size: 45px;
-    line-height: 59px;
+    font-size: 3vw;
+    line-height: 4vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
   }
 
-  .about{
-    max-width: 400px;
-  }
-
-  .me{
-    max-width: 400px;
-  }
-
-  .blurb{
-    font-size: 20px;
-    line-height: 35px;
-  }
-
-  .captions{
-    font-size: 19px;
-    line-height: 27px;
-  }
 }
 
 
@@ -154,13 +113,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 130px;
+  margin-bottom: 9.5vw;
 }
 
 .titleFavorites{
   font-weight: bold;
-  font-size: 45px;
-  line-height: 57px;
+  font-size: 3.2vw;
+  line-height: 4.2vw;
   letter-spacing: 0.02em;
 
   margin-bottom: 40px;
@@ -169,32 +128,31 @@
 .writtenFavs{
   width: 100%;
   margin-left: auto;
-  max-width: 800px;
-  margin-right: 50px;
-
+  max-width: 57.8%;
+  margin-right: 2.2vw;
 }
 
 .favorite{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 1vw;
 }
 
 .favText{
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
-  line-height: 31px;
+  font-size: 1.8vw;
+  line-height: 2.8vw;
   letter-spacing: 0.02em;
-  margin-left: 30px;
+  margin-left: 1vw;
 }
 
 .location{
   width: 100%;
-  margin-left: 50px;
   margin-right: auto;
-  max-width: 400px;
+  max-width: 30%;
+  padding-left: 2.5vw;
 }
 
 .location > img{
@@ -205,56 +163,61 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 0.5vw;
 }
 
 .smCaption{
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 1.4vw;
+  line-height: 2.4vw;
   letter-spacing: 0.02em;
-  margin-left: 8px;
+  margin-left: 0.5vw;
 }
 
 .icon{
-  font-size: 40px;
+  font-size: 2.8vw;
 }
 
 .locationIcon{
-  font-size: 20px;
+  font-size: 1.4vw;
 }
 
 
 @media screen and (max-width:767px) {
   .favs{
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 325px;
-    margin-bottom: 100px;
+    margin-bottom: 20vw;
   }
 
   .titleFavorites{
-    font-size: 35px;
-    line-height: 43px;
+    font-size: 8vw;
+    line-height: 9vw;
+    margin-bottom: 9vw;
   }
 
   .writtenFavs{
     margin-bottom: 50px;
-    margin-left: 0px;
-    margin-right: 0px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 83%;
+  }
+
+  .favorite{
+    margin-bottom: 4vw;
   }
 
   .favText{
-    font-size: 18px;
-    line-height: 23px;
-    margin-left: 15px;
+    font-size: 4.3vw;
+    line-height: 5.5vw;
+    margin-left: 2.5vw;
   }
 
   .smCaption{
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 4.3vw;
+    line-height: 5.5vw;
+    margin-left: 4vw;
   }
 
   .icon{
@@ -262,65 +225,27 @@
   }
 
   .location{
+    max-width: 83%;
     margin-left: 0px;
     margin-right: 0px;
+    padding-left: 0vw;
   }
 
   .locationText{
-    margin-left: 15px;
+    margin-top: 3vw;
+    margin-left: 4vw;
   }
 
   .location > img{
     width: 100%;
   }
 
-}
-
-@media screen and (min-width:400px) and (max-width:767px) {
-  .favs{
-    max-width: 350px;
+  .icon{
+    font-size: 6vw;
   }
 
-  .titleFavorites{
-    font-size: 38px;
-    line-height: 46px;
+  .locationIcon{
+    font-size: 4.6vw;
   }
 
-  .favText{
-    font-size: 20px;
-    line-height: 26px;
-    margin-left: 15px;
-  }
-
-  .smCaption{
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-}
-
-@media screen and (min-width:450px) and (max-width:767px) {
-  .favs{
-    max-width: 400px;
-  }
-
-  .titleFavorites{
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  .favText{
-    font-size: 23px;
-    line-height: 31px;
-    margin-left: 15px;
-  }
-
-  .smCaption{
-    font-size: 23px;
-    line-height: 27px;
-  }
-
-  .locationText{
-    margin-left: 20px;
-  }
 }
