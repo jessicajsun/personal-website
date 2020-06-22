@@ -4,22 +4,21 @@
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  margin-bottom: 8vw;
+  margin-bottom: 150px;
 }
 
 .intro {
   width: 100%;
   margin-left: auto;
   padding-left: 30px;
-  padding-right: 30px;
-  max-width: 50%;
+  max-width: 650px;
   padding-bottom: 20px;
 }
 
 .hi{
   font-weight: bold;
-  font-size: 5.5vw;
-  line-height: 7vw;
+  font-size: 80px;
+  line-height: 101px;
   letter-spacing: 0.02em;
   margin-bottom: 40px;
   color: #000000;
@@ -27,8 +26,8 @@
 
 .blurb {
   font-weight: 400;
-  font-size: 2.8vw;
-  line-height: 4vw;
+  font-size: 40px;
+  line-height: 53px;
   letter-spacing: 0.02em;
   color: #000000;
 }
@@ -36,19 +35,19 @@
 .circleContainer{
   width: 100%;
   margin-right: auto;
-  max-width: 42%;
+  max-width: 650px;
   padding-left: 50px;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:576px) {
   .topPanel{
     flex-direction: column;
-    margin-bottom: 20vw;
+    margin-bottom: 50px;
   }
 
   .intro {
     max-width: 90%;
-    padding-left: 40px;
+    padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 35px;
@@ -56,20 +55,127 @@
   }
 
   .hi{
-    font-size: 10vw;
-    line-height: 12.5vw;
-    margin-bottom: 25px;
+    font-size: 45px;
+    line-height: 57px;
+    margin-bottom: 20px;
   }
 
   .blurb{
-    font-size: 4.8vw;
-    line-height: 7vw;
+    font-size: 20px;
+    line-height: 27px;
   }
 
   .circleContainer{
     margin-left: auto;
     margin-right: auto;
-    max-width: 80%;
+    max-width: 75%;
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+  .topPanel{
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .intro {
+    max-width: 90%;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-bottom: 0px;
+  }
+
+  .hi{
+    font-size: 55px;
+    line-height: 67px;
+    margin-bottom: 30px;
+  }
+
+  .blurb{
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .circleContainer{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+  .topPanel{
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .intro {
+    max-width: 90%;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-bottom: 0px;
+  }
+
+  .hi{
+    font-size: 60px;
+    line-height: 72px;
+    margin-bottom: 30px;
+  }
+
+  .blurb{
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .circleContainer{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 65%;
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+  .topPanel{
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+
+  .intro {
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-bottom: 0px;
+    padding-left: 40px;
+  }
+
+  .hi{
+    font-size: 65px;
+    line-height: 75px;
+    margin-bottom: 30px;
+  }
+
+  .blurb{
+    font-size: 31px;
+    line-height: 43px;
+  }
+
+  .circleContainer{
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 40px;
     padding-right: 30px;
   }
@@ -77,31 +183,32 @@
 }
 
 
+
 .work{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 7vw;
+  margin-bottom: 80px;
 }
 
 .titles{
   font-weight: bold;
-  font-size: 4vw;
-  line-height: 5.2vw;
+  font-size: 55px;
+  line-height: 69px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 92%;
+  max-width: 1300px;
   padding-left: 30px;
-  padding-right: 30px;
   letter-spacing: 0.02em;
-  margin-bottom: 4.2vw;
+  margin-bottom: 60px;
 }
 
 .threeitemrow{
   margin-left: auto;
   margin-right: auto;
+  max-width: 1300px;
   padding-left: 30px;
   display: flex;
   flex-direction: row;
@@ -112,7 +219,8 @@
 
 .item{
   width: 30vw;
-  padding-right: 2vw;
+  padding-right: 30px;
+  max-width: 500px;
 }
 
 .rectangle{
@@ -121,6 +229,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 30px;
+  max-height: 250px;
 }
 
 .cappedSize > img {
@@ -181,8 +290,8 @@
 
 .captions{
   font-weight: 600;
-  font-size: 1.7vw;
-  line-height: 3.8vw;
+  font-size: 25px;
+  line-height: 35px;
   /* or 140% */
 
   display: flex;
@@ -190,42 +299,37 @@
   justify-content: center;
   letter-spacing: 0.05em;
 
-  margin-top: 1.2vw;
-  margin-bottom: 1.2vw;
+  margin-top: 25px;
+  margin-bottom: 25px;
   color: #000000;
 }
 
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:576px) {
   .work{
-    margin-bottom: 40px;
-  }
-
-  .captions{
-    line-height: 25px;
+    margin-bottom: 25px;
   }
 
   .titles{
-    margin-left: inherit;
-    margin-right: inherit;
-    padding-left: 40px;
-    padding-right: 30px;
-    font-size: 7vw;
-    line-height: 8vw;
-    margin-bottom: 9vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    padding-right: 10px;
+    font-size: 30px;
+    margin-bottom: 25px;
   }
 
   .threeitemrow{
     flex-direction: column;
     margin-left: inherit;
     margin-right: inherit;
-    padding-left: 0px;
     margin-bottom: 0px;
+    max-width: 90%;
   }
 
   .item{
     width: 70vw;
-    max-width: 92%;
+    max-width: 95%;
   }
 
   .rectangle{
@@ -233,20 +337,133 @@
   }
 
   .captions{
-    font-size: 4.5vw;
-    line-height: 10vw;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 40px;
   }
 }
 
+@media screen and (min-width:577px) and (max-width:768px) {
+  .work{
+    margin-bottom: 25px;
+  }
+
+  .titles{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    padding-right: 10px;
+    font-size: 35px;
+    margin-bottom: 35px;
+  }
+
+  .threeitemrow{
+    flex-direction: column;
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-bottom: 0px;
+    max-width: 90%;
+  }
+
+  .item{
+    width: 60vw;
+  }
+
+  .rectangle{
+    height: 30vw;
+  }
+
+  .captions{
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+  .work{
+    margin-bottom: 25px;
+  }
+
+  .titles{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    padding-right: 10px;
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+
+  .threeitemrow{
+    flex-direction: row;
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-bottom: 0px;
+    max-width: 90%;
+  }
+
+  .item{
+    width: 30vw;
+  }
+
+  .rectangle{
+    height: 17vw;
+  }
+
+  .captions{
+    font-size: 17.5px;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+  .work{
+    margin-bottom: 40px;
+  }
+
+  .titles{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 10px;
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+
+  .threeitemrow{
+    flex-direction: row;
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-bottom: 0px;
+    padding-right: 10px;
+  }
+
+  .item{
+    width: 30vw;
+  }
+
+  .rectangle{
+    height: 17vw;
+  }
+
+  .captions{
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+}
 
 .projects{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 7vw;
+  margin-bottom: 70px;
 }
 
 .hackRect{
@@ -275,10 +492,4 @@
 
 .alarmIcon{
   border-radius: 30px;
-}
-
-@media screen and (max-width:767px) {
-  .projects{
-    margin-bottom: 20vw;
-  }
 }
