@@ -62,7 +62,7 @@
   .topPanel{
     flex-direction: column-reverse;
     margin-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .titleAbout{
@@ -89,7 +89,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 360px;
+    max-width: 80%;
   }
 
   .captions{
@@ -132,7 +132,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 500px;
+    max-width: 70%;
   }
 
   .captions{
@@ -175,7 +175,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 500px;
+    max-width: 60%;
   }
 
   .captions{
@@ -189,21 +189,21 @@
 
 @media screen and (min-width:992px) and (max-width:1199.98px){
   .topPanel{
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 78px;
     margin-bottom: 120px;
+    max-width: 88%;
   }
 
   .about {
     width: 100%;
-    margin-left: auto;
-    max-width: 500px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding-bottom: 20px;
-    margin-right: 20px;
-
   }
 
   .titleAbout{
@@ -225,15 +225,14 @@
 
   .me{
     width: 100%;
-    margin-left: 30px;
-    margin-right: auto;
-    max-width: 400px;
+    margin-left: 40px;
+    margin-right: 0px;
+    max-width: 45%;
   }
 
   .captions{
-    font-size: 16px;
-    line-height: 23px;
-
+    font-size: 17px;
+    line-height: 25px;
 
     margin-top: 15px;
     margin-bottom: 15px;
@@ -293,6 +292,7 @@
 }
 
 
+
 .favs{
   display: flex;
   flex-direction: row;
@@ -305,7 +305,7 @@
   width: 100%;
   margin-left: auto;
   max-width: 850px;
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .titleFavorites{
@@ -341,6 +341,10 @@
   width: 100%;
   margin-right: auto;
   max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .location > img{
@@ -351,7 +355,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .locationIcon{
@@ -368,24 +372,26 @@
 }
 
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:575.98px) {
   .favs{
     flex-direction: column;
-    margin-bottom: 20vw;
-  }
-
-  .writtenFavs{
-    margin-bottom: 50px;
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
     max-width: 83%;
+    margin-bottom: 90px;
+  }
+
+  .writtenFavs{
+    margin-bottom: 40px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .titleFavorites{
-    font-size: 8vw;
-    line-height: 9vw;
-    margin-bottom: 9vw;
+    font-size: 35px;
+    line-height: 43px;
+    margin-bottom: 30px;
   }
 
   .favorite{
@@ -393,25 +399,20 @@
   }
 
   .icon{
-    font-size: 6vw;
+    font-size: 25px;
   }
 
   .favText{
-    font-size: 4.3vw;
-    line-height: 5.5vw;
+    font-size: 18px;
+    line-height: 23px;
     margin-left: 2.5vw;
   }
 
   .location{
-    max-width: 83%;
+    max-width: 80%;
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0vw;
-  }
-
-  .locationText{
-    margin-top: 3vw;
-    margin-left: 4vw;
   }
 
   .location > img{
@@ -419,14 +420,259 @@
   }
 
   .locationIcon{
-    font-size: 4.6vw;
+    font-size: 15px;
   }
 
   .smCaption{
-    font-size: 4.3vw;
-    line-height: 5.5vw;
-    margin-left: 4vw;
+    font-size: 17px;
+    line-height: 23px;
   }
 
+}
 
+@media screen and (min-width: 576px) and (max-width:767.98px) {
+  .favs{
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 83%;
+    margin-bottom: 90px;
+  }
+
+  .writtenFavs{
+    margin-bottom: 40px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .titleFavorites{
+    font-size: 38px;
+    line-height: 46px;
+    margin-bottom: 30px;
+  }
+
+  .favorite{
+    margin-bottom: 4vw;
+  }
+
+  .icon{
+    font-size: 30px;
+  }
+
+  .favText{
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 2.5vw;
+  }
+
+  .location{
+    max-width: 80%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0vw;
+  }
+
+  .location > img{
+    width: 100%;
+  }
+
+  .locationText{
+    margin-top: 15px;
+  }
+
+  .locationIcon{
+    font-size: 20px;
+  }
+
+  .smCaption{
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:991.98px) {
+  .favs{
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+    margin-bottom: 90px;
+  }
+
+  .writtenFavs{
+    margin-bottom: 40px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+
+  .titleFavorites{
+    font-size: 35px;
+    line-height: 43px;
+    margin-bottom: 30px;
+  }
+
+  .favorite{
+    margin-bottom: 4vw;
+  }
+
+  .icon{
+    font-size: 25px;
+  }
+
+  .favText{
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 2.5vw;
+  }
+
+  .location{
+    max-width: 40%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0vw;
+  }
+
+  .location > img{
+    width: 100%;
+  }
+
+  .locationText{
+    margin-top: 15px;
+  }
+
+  .locationIcon{
+    font-size: 15px;
+  }
+
+  .smCaption{
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width:1199.98px) {
+  .favs{
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 88%;
+    margin-bottom: 90px;
+  }
+
+  .writtenFavs{
+    margin-bottom: 40px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+
+  .titleFavorites{
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 30px;
+  }
+
+  .favorite{
+    margin-bottom: 4vw;
+  }
+
+  .icon{
+    font-size: 25px;
+  }
+
+  .favText{
+    font-size: 25px;
+    line-height: 32px;
+    margin-left: 2.5vw;
+  }
+
+  .location{
+    max-width: 40%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0vw;
+  }
+
+  .location > img{
+    width: 100%;
+  }
+
+  .locationText{
+    margin-top: 15px;
+  }
+
+  .locationIcon{
+    font-size: 15px;
+  }
+
+  .smCaption{
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+}
+
+@media screen and (min-width:1200px) and (max-width: 1350px){
+  .favs{
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+  }
+
+  .writtenFavs{
+    margin-bottom: 40px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 30px;
+    max-width: 730px;
+  }
+
+  .titleFavorites{
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 35px;
+  }
+
+  .favorite{
+    margin-bottom: 3vw;
+  }
+
+  .icon{
+    font-size: 30px;
+  }
+
+  .favText{
+    font-size: 23px;
+    line-height: 31px;
+    margin-left: 2vw;
+  }
+
+  .location{
+    max-width: 350px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0vw;
+  }
+
+  .location > img{
+    width: 100%;
+  }
+
+  .locationText{
+    margin-top: 15px;
+  }
+
+  .locationIcon{
+    font-size: 15px;
+  }
+
+  .smCaption{
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
