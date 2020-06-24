@@ -2,8 +2,6 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import React from 'react'
-import { initGA, logPageView } from '../utils/analytics'
 
 function ActiveLink({ children, href }) {
   const router = useRouter()
@@ -36,14 +34,6 @@ export default class Layout extends React.Component{
     }));
   }
 
-  componentDidMount () {
-    if (!window.GA_INITIALIZED) {
-      initGA()
-      window.GA_INITIALIZED = true
-    }
-    logPageView()
-  }
-
   render() {
 
     let tabClassName = `${styles.tab} ${this.state.isMenuOpen ? "" : styles.navClosed}`;
@@ -74,6 +64,18 @@ export default class Layout extends React.Component{
         />
 
         <meta property="og:title" content="jessica sun" key="title" />
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170720179-1"/>
+
+        <script
+          dangerouslySetInnerHTML={{__html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-170720179-1');
+              `,
+          }}
+        />
       </Head>
 
 
