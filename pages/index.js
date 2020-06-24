@@ -23,7 +23,7 @@ export default function Home(){
 
             {/* right */}
             <div className={styles.circleContainer}>
-              <img src="/images/circles.png"/>
+              <img src="/images/Group 6.png"/>
             </div>
 
         </section>
