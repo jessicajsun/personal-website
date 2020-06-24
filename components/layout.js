@@ -56,6 +56,15 @@ export default class Layout extends React.Component{
     <div className={styles.container}>
       <Head>
         <script src="https://kit.fontawesome.com/9a2254ebc5.js" crossOrigin="anonymous"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170720179-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-170720179-1');
+        </script>
         <link rel="icon" href="/favicon.ico" />
         <title>jessica sun</title>
 
