@@ -58,13 +58,19 @@ export default class Layout extends React.Component{
         <script src="https://kit.fontawesome.com/9a2254ebc5.js" crossOrigin="anonymous"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170720179-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-          gtag('config', 'UA-170720179-1');
-        </script>
+            gtag('config', 'UA-170720179-1');
+            `,
+
+          }}
+        />
+
         <link rel="icon" href="/favicon.ico" />
         <title>jessica sun</title>
 
