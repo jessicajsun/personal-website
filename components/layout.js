@@ -2,6 +2,8 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import React from 'react'
+import { initGA, logPageView } from '../utils/analytics'
 
 function ActiveLink({ children, href }) {
   const router = useRouter()
@@ -34,6 +36,13 @@ export default class Layout extends React.Component{
     }));
   }
 
+  componentDidMount () {
+    if (!window.GA_INITIALIZED) {
+      initGA()
+      window.GA_INITIALIZED = true
+    }
+    logPageView()
+  }
 
   render() {
 
@@ -56,20 +65,6 @@ export default class Layout extends React.Component{
     <div className={styles.container}>
       <Head>
         <script src="https://kit.fontawesome.com/9a2254ebc5.js" crossOrigin="anonymous"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170720179-1"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-170720179-1');
-            `,
-
-          }}
-        />
-
         <link rel="icon" href="/favicon.ico" />
         <title>jessica sun</title>
 
