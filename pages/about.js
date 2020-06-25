@@ -88,7 +88,7 @@ export default function About(){
                   <i className="fas fa-book fa-stack-1x fa-inverse"></i>
                 </span>
               </div>
-              <div className={styles.favText}>Trick Mirror: Reflections on Self-Delusion by Jia Tolentino</div>
+              <div className={styles.favText}><span style={{fontStyle: 'italic'}}>Trick Mirror: Reflections on Self-Delusion</span> by Jia Tolentino</div>
             </div>
 
           </div>
