@@ -256,8 +256,20 @@
   object-fit: cover;
 }
 
+.blueprintRect{
+  background: #EDEEEF;
+}
+
+.blueprintRect > img{
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 30px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 .heartRect > img {
-  max-height: 100%;
   max-height: 93%;
   margin-top: auto;
 }

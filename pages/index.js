@@ -83,6 +83,14 @@ export default function Home(){
             <div className={styles.captions}>HackMIT</div>
           </div>
 
+          {/* blueprint */}
+          <div className={styles.item}>
+            <div className={`${styles.rectangle} ${styles.blueprintRect} ${styles.grow}`}>
+              <img src="/images/projects/lightbp.png"/>
+            </div>
+            <div className={styles.captions}>Blueprint</div>
+          </div>
+
           {/* kelp */}
           <div className={styles.item}>
             <div className={`${styles.rectangle} ${styles.kelpRect} ${styles.grow} ${styles.cappedSize}`}>
@@ -93,6 +101,10 @@ export default function Home(){
             <div className={styles.captions}>Kelp</div>
           </div>
 
+        </div>
+
+        <div className={styles.threeitemrow}>
+
           {/* dashboard */}
           <div className={styles.item}>
             <div className={`${styles.rectangle} ${styles.dashRect} ${styles.grow}`}>
@@ -100,10 +112,6 @@ export default function Home(){
             </div>
             <div className={styles.captions}>Morning Dashboard</div>
           </div>
-
-        </div>
-
-        <div className={styles.threeitemrow}>
 
           {/* heartsmart socks */}
           <div className={styles.item}>
