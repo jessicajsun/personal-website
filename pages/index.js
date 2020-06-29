@@ -86,7 +86,7 @@ export default function Home(){
           {/* blueprint */}
           <div className={styles.item}>
             <div className={`${styles.rectangle} ${styles.blueprintRect} ${styles.grow}`}>
-              <img src="/images/projects/lightbp.png"/>
+              <img src="/images/projects/blueprint.png"/>
             </div>
             <div className={styles.captions}>Blueprint</div>
           </div>
