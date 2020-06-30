@@ -38,9 +38,11 @@ export default function Home(){
 
           {/* barclays */}
           <div className={styles.item}>
-            <div className={`${styles.rectangle} ${styles.barclaysRect} ${styles.grow} ${styles.cappedSize}`}>
-              <img src="/images/work/barclays.jpg"/>
-            </div>
+            <Link href="/barclays">
+              <div className={`${styles.rectangle} ${styles.barclaysRect} ${styles.grow} ${styles.cappedSize}`}>
+                <img src="/images/work/barclays.jpg"/>
+              </div>
+            </Link>
             <div className={styles.captions}>Barclays</div>
           </div>
 
