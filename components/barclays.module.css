@@ -49,6 +49,7 @@
   margin-right: auto;
   background: #33D3FF;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .grow {
