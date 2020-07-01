@@ -10,7 +10,7 @@ export default function Moderna(){
       <Layout>
 
         <Head>
-          <title>moderna</title>
+          <title>moderna therapeutics</title>
         </Head>
 
         <main>
