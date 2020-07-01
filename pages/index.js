@@ -2,24 +2,7 @@ import Head from 'next/head'
 import styles from '../components/home.module.css'
 import Link from 'next/link'
 import Layout from '../components/layout.js'
-import { useRouter } from 'next/router'
-
-function SlowLink({ children, href }) {
-  const router = useRouter()
-
-  const handleClick = (e) => {
-    e.preventDefault()
-    setTimeout(() => {
-      router.push(href)
-    }, 250);
-  }
-
-  return (
-    <a href={href} onClick={handleClick}>
-      {children}
-    </a>
-  )
-}
+import SlowLink from '../utils/SlowLink.js'
 
 export default function Home(){
 
@@ -65,11 +48,11 @@ export default function Home(){
 
           {/* moderna */}
           <div className={styles.item}>
-            <Link href="/moderna">
+            <SlowLink href="/moderna">
               <div className={`${styles.rectangle} ${styles.modernaRect} ${styles.grow} ${styles.cappedSize}`}>
                   <img src="/images/work/moderna.png"/>
               </div>
-            </Link>
+            </SlowLink>
             <div className={styles.captions}>Moderna Therapeutics</div>
           </div>
 
