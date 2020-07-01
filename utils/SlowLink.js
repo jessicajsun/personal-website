@@ -6,7 +6,7 @@ export default function ({ children, href }) {
   const handleClick = (e) => {
     e.preventDefault()
     setTimeout(() => {
-      router.push(href)
+      router.push(href).then(() => window.scrollTo(0, 0))
     }, 200);
   }
 
