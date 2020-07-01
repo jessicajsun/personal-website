@@ -314,10 +314,10 @@
   }
 
   .summary{
-    margin-left: 40px;
+    margin-left: 35px;
     margin-right: inherit;
     max-width: 90%;
-    padding-left: 35px;
+    padding-left: 40px;
     border-left-width: 16px;
   }
 
@@ -406,10 +406,10 @@
   }
 
   .summary{
-    margin-left: 55px;
+    margin-left: 45px;
     margin-right: inherit;
     max-width: 90%;
-    padding-left: 35px;
+    padding-left: 45px;
     border-left-width: 16px;
   }
 
