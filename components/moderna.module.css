@@ -7,15 +7,6 @@
   margin-bottom: 80px;
 }
 
-.border{
-  width: 1.5vw;
-  height: 48.5vw;
-  max-width: 20px;
-  max-height: 700px;
-  margin-left: auto;
-  background: #2191FB;
-}
-
 .summary {
   display: flex;
   flex-direction: column;
@@ -62,7 +53,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
-  line-height: 28px;
   letter-spacing: 0.02em;
   margin-left: 10px;
 }
@@ -102,7 +92,6 @@
 
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #000000;
 }
 
 .button{
@@ -143,20 +132,15 @@
 @media screen and (max-width:575.98px){
   .topPanel{
     margin-top: 0px;
-    margin-bottom: 80px;
-  }
-
-  .border{
-    margin-left: inherit;
-    width: 3vw;
-    height: 5000vw;
-    max-width: 15px;
+    margin-bottom: 40px;
   }
 
   .summary{
     margin-left: 25px;
     margin-right: inherit;
-    max-width: 80%;
+    max-width: 90%;
+    padding-left: 20px;
+    border-left-width: 12px;
   }
 
   .title{
@@ -168,6 +152,7 @@
   .subtitle{
     font-size: 21px;
     line-height: 29px;
+    margin-bottom: 30px;
   }
 
   .quickNotes{
@@ -178,14 +163,13 @@
   .note{
     align-items: flex-start;
     margin-right: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .noteText{
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 24px;
     letter-spacing: 0.02em;
     margin-left: 10px;
   }
@@ -196,27 +180,26 @@
 
   .description{
     font-size: 17px;
-    max-width: 95%;
-    margin-bottom: 100px;
+    margin-bottom: 12px;
   }
 
   .photo{
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 95%;
+    max-width: 80%;
     margin-bottom: 20px;
   }
 
   .captions{
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 19px;
+    line-height: 27px;
 
     text-align: center;
     letter-spacing: 0.02em;
 
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .button{
@@ -238,13 +221,15 @@
 @media screen and (min-width:576px) and (max-width:767.98px) {
   .topPanel{
     margin-top: 0px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   .summary{
     margin-left: 30px;
     margin-right: inherit;
-    max-width: 80%;
+    max-width: 90%;
+    padding-left: 25px;
+    border-left-width: 15px;
   }
 
   .title{
@@ -255,15 +240,55 @@
 
   .subtitle{
     font-size: 25px;
-    line-height: 32px;
+    line-height: 33px;
+    margin-bottom: 35px;
   }
 
-  .border{
-    margin-left: inherit;
-    width: 2vw;
-    height: 40vw;
-    max-width: 18px;
-    max-height: 150px;
+  .quickNotes{
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .note{
+    align-items: flex-start;
+    margin-right: 30px;
+    margin-bottom: 12px;
+  }
+
+  .noteText{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    letter-spacing: 0.02em;
+    margin-left: 10px;
+  }
+
+  .icon{
+    font-size: 18px;
+  }
+
+  .description{
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .photo{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .captions{
+    font-size: 21px;
+    line-height: 29px;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .button{
@@ -273,7 +298,7 @@
     max-height: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
 
   .backToWork{
@@ -291,7 +316,9 @@
   .summary{
     margin-left: 40px;
     margin-right: inherit;
-    max-width: 80%;
+    max-width: 90%;
+    padding-left: 35px;
+    border-left-width: 16px;
   }
 
   .title{
@@ -301,16 +328,60 @@
   }
 
   .subtitle{
-    font-size: 26px;
-    line-height: 33px;
+    font-size: 27px;
+    line-height: 37px;
+    margin-bottom: 35px;
   }
 
-  .border{
-    margin-left: inherit;
-    width: 2vw;
-    height: 40vw;
-    max-width: 20px;
-    max-height: 160px;
+  .quickNotes{
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+
+  .note{
+    align-items: flex-start;
+    margin-bottom: 12px;
+    margin-right: 20px;
+  }
+
+  .noWrap{
+    flex-shrink: 0;
+  }
+
+  .noteText{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    margin-left: 10px;
+  }
+
+  .icon{
+    font-size: 18px;
+  }
+
+  .description{
+    font-size: 23px;
+    margin-bottom: 12px;
+  }
+
+  .photo{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .captions{
+    font-size: 22px;
+    line-height: 30px;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .button{
@@ -320,12 +391,11 @@
     max-height: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
   }
 
   .backToWork{
-    font-size: 18px;
-    margin-left: 12px;
+    font-size: 17px;
+    margin-left: 10px;
   }
 }
 
@@ -338,7 +408,9 @@
   .summary{
     margin-left: 55px;
     margin-right: inherit;
-    max-width: 80%;
+    max-width: 90%;
+    padding-left: 35px;
+    border-left-width: 16px;
   }
 
   .title{
@@ -348,16 +420,59 @@
   }
 
   .subtitle{
-    font-size: 27px;
-    line-height: 34px;
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 35px;
   }
 
-  .border{
-    margin-left: inherit;
-    width: 2vw;
-    height: 40vw;
-    max-width: 18px;
-    max-height: 160px;
+  .quickNotes{
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+
+  .note{
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+
+  .noWrap{
+    flex-shrink: 0;
+  }
+
+  .noteText{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    margin-left: 10px;
+  }
+
+  .icon{
+    font-size: 19px;
+  }
+
+  .description{
+    font-size: 23px;
+    margin-bottom: 12px;
+  }
+
+  .photo{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .captions{
+    font-size: 23px;
+    line-height: 31px;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    margin-top: 18px;
+    margin-bottom: 18px;
   }
 
   .button{
@@ -367,7 +482,11 @@
     max-height: 55px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
+  }
+
+  .backToWork{
+    font-size: 17px;
+    margin-left: 10px;
   }
 
 }

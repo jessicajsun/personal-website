@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../components/moderna.module.css'
 import Link from 'next/link'
 import Layout from '../components/layout.js'
+import SlowLink from '../utils/SlowLink.js'
 
 export default function Moderna(){
 
@@ -27,7 +28,7 @@ export default function Moderna(){
             <div className={styles.quickNotes}>
 
               {/* timeline */}
-              <div className={styles.note}>
+              <div className={`${styles.note} ${styles.noWrap}`}>
                 <div className={styles.icon}>
                   <span className="fa-stack">
                     <i className="fa fa-circle fa-stack-2x" style={{color: '#2191FB'}}></i>
@@ -38,7 +39,7 @@ export default function Moderna(){
               </div>
 
               {/* roles */}
-              <div className={styles.note}>
+              <div className={`${styles.note} ${styles.noWrap}`}>
                 <div className={styles.icon}>
                   <span className="fa-stack">
                     <i className="fa fa-circle fa-stack-2x" style={{color: '#2191FB'}}></i>
@@ -82,12 +83,12 @@ export default function Moderna(){
 
 
 
-        <Link href="/">
+        <SlowLink href="/">
           <div className={`${styles.button} ${styles.grow}`}>
             <i className="fas fa-arrow-left fa-lg" style={{color: '#FFFFFF'}}></i>
             <div className={styles.backToWork}>back to work</div>
           </div>
-        </Link>
+        </SlowLink>
 
         </main>
 

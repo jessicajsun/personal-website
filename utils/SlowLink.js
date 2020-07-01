@@ -7,7 +7,7 @@ export default function ({ children, href }) {
     e.preventDefault()
     setTimeout(() => {
       router.push(href)
-    }, 150);
+    }, 200);
   }
 
   return (
