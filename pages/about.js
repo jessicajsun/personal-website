@@ -26,7 +26,7 @@ export default function About(){
               (<span style={{color: "#FC3F42"}}>Go Cards!</span>),
               but am currently a rising senior at MIT studying computer science and molecular biology.
               <p></p>
-              This summer, I’m working at <span style={{color: "#2191FB"}}>Barclays</span>, building XXX.
+              This summer, I’m working at <span style={{color: "#2191FB"}}>Barclays</span>. {/*, building XXX*/}
               I previously interned at<span style={{color: "#FC3F42"}}> Moderna Therapeutics </span>
               and<span style={{color: "#FC3F42"}}> Mastercard</span>,
               building software to predict adverse immune responses and streamline business processes.
