@@ -113,10 +113,12 @@ export default function Home(){
 
           {/* dashboard */}
           <div className={styles.item}>
-            <div className={`${styles.rectangle} ${styles.dashRect} ${styles.grow}`}>
-              <img src="/images/projects/dash.png"/>
-            </div>
-            <div className={styles.captions}>Morning Dashboard</div>
+            <SlowLink href="/dashboard">
+              <div className={`${styles.rectangle} ${styles.dashRect} ${styles.grow}`}>
+                <img src="/images/projects/dash.png"/>
+              </div>
+              <div className={styles.captions}>Morning Dashboard</div>
+            </SlowLink>
           </div>
 
           {/* heartsmart socks */}
