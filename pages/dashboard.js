@@ -132,7 +132,7 @@ export default function Dashboard(){
                   <span style={{fontWeight: '600'}}>The weather section highlights the current temperature, daily high and low, and forecast summary from DarkSky.</span> I also created weather icons to match hourly conditions.
                   </div>
                 </div>
-              <div className = {styles.featureImg}><img src="/images/dash/weather.png"/></div>
+              <div className = {styles.weather}><img src="/images/dash/weather.png"/></div>
             </div>
 
             <div className = {styles.logos}>
@@ -161,7 +161,7 @@ export default function Dashboard(){
                   Therefore,<span style={{fontWeight: '600'}}> I grouped lines together and arranged the groups by station and direction. Arrival times for incoming trains are listed within each line group.</span> I focused on the three stations closest to the apartment; if the next train time isn’t within how long it takes to walk to the station, the following train is displayed instead.
                   </div>
                 </div>
-                <div className = {styles.featureImg}><img src="/images/dash/subway.png"/></div>
+                <div className = {styles.subway}><img src="/images/dash/subway.png"/></div>
             </div>
 
           </div>
