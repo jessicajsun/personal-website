@@ -796,6 +796,7 @@
 
   .featureDescription{
     font-size: 23px;
+    max-width: 100%;
   }
 
   .logos{
