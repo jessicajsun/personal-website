@@ -741,10 +741,6 @@
     margin-bottom: 12px;
   }
 
-  .noWrap{
-    flex-shrink: 0;
-  }
-
   .noteText{
     font-style: normal;
     font-weight: normal;
@@ -762,12 +758,54 @@
     margin-bottom: 12px;
   }
 
+  .features{
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  .circle{
+    font-size: 70px;
+    width: 18vw;
+    height: 18vw;
+
+    margin-right: 20px;
+  }
+
+  .sectionText{
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
   .photo{
-    margin-top: 60px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+
+  .featureTitle{
+    margin-bottom: 30px;
+  }
+
+  .blurbMargins{
+    margin-right: 0px;
+  }
+
+  .featureText{
+    margin-bottom: 70px;
+  }
+
+  .featureDescription{
+    font-size: 23px;
+  }
+
+  .logos{
+    margin-top: 10px;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 80%;
-    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
   }
 
   .captions{
