@@ -358,8 +358,8 @@
   }
 
   .captions{
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 19px;
+    line-height: 27px;
 
     text-align: center;
     letter-spacing: 0.02em;
@@ -439,12 +439,88 @@
     margin-bottom: 12px;
   }
 
-  .photo{
-    margin-top: 50px;
+  .features{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 80%;
+
+  }
+
+  .circle{
+    font-size: 100px;
+    width: 50vw;
+    height: 50vw;
+
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
+  }
+
+  .sectionText{
+    margin-top: 15px;
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  .photo{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    margin-bottom: 40px;
+  }
+
+  .featureTitle{
+    font-size: 41px;
+    margin-bottom: 20px;
+  }
+
+  .featureText{
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .blurbMargins{
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .featureSubtitle{
+    font-size: 34px;
+  }
+
+  .featureDescription{
+    font-size: 20px;
+  }
+
+  .featureImg{
+    margin-left: 0px;
+    margin-bottom: 50px;
+    width: 95%;
+  }
+
+  .weather{
+    margin-left: 0px;
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .subway{
+    margin-left: 0px;
+    width: 95%;
+  }
+
+  .logos{
+    margin-top: 10px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
   }
 
   .captions{
