@@ -27,7 +27,7 @@ export default function Dashboard(){
             <div className={styles.quickNotes}>
 
               {/* timeline */}
-              <div className={`${styles.note} ${styles.noWrap}`}>
+              <div className={styles.note}>
                 <div className={styles.icon}>
                   <span className="fa-stack">
                     <i className="fa fa-circle fa-stack-2x" style={{color: '#FFD507'}}></i>
@@ -38,7 +38,7 @@ export default function Dashboard(){
               </div>
 
               {/* roles */}
-              <div className={`${styles.note}`}>
+              <div className={styles.note}>
                 <div className={styles.icon}>
                   <span className="fa-stack">
                     <i className="fa fa-circle fa-stack-2x" style={{color: '#FFD507'}}></i>

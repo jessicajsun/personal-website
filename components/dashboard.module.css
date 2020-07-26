@@ -354,7 +354,7 @@
     margin-right: auto;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 
   .captions{
@@ -520,7 +520,7 @@
     margin-right: auto;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   .captions{
@@ -587,10 +587,6 @@
     margin-right: 20px;
   }
 
-  .noWrap{
-    flex-shrink: 0;
-  }
-
   .noteText{
     font-style: normal;
     font-weight: normal;
@@ -608,17 +604,83 @@
     margin-bottom: 12px;
   }
 
+  .features{
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  .circle{
+    font-size: 50px;
+    width: 18vw;
+    height: 18vw;
+
+    margin-right: 20px;
+  }
+
+  .sectionText{
+    margin-top: 12px;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
   .photo{
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .featureTitle{
+    font-size: 43px;
     margin-bottom: 20px;
   }
 
+  .featureText{
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .blurbMargins{
+    margin-right: 0px;
+    margin-bottom: 55px;
+  }
+
+  .featureSubtitle{
+    font-size: 36px;
+  }
+
+  .featureDescription{
+    font-size: 23px;
+  }
+
+  .featureImg{
+    margin-left: 0px;
+    margin-bottom: 60px;
+    width: 85%;
+  }
+
+  .weather{
+    margin-left: 0px;
+    width: 85%;
+    margin-bottom: 40px;
+  }
+
+  .subway{
+    margin-left: 0px;
+    width: 85%;
+  }
+
+  .logos{
+    margin-top: 10px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+
   .captions{
-    font-size: 19px;
-    line-height: 27px;
+    font-size: 21px;
+    line-height: 29px;
 
     text-align: center;
     letter-spacing: 0.02em;
@@ -628,6 +690,7 @@
   }
 
   .button{
+    margin-top: 120px;
     width: 48vw;
     height: 13vw;
     max-width: 190px;
