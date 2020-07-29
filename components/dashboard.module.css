@@ -106,11 +106,13 @@
 
 .photo{
   width: 100%;
-  max-width: 95%;
+  max-width: 80%;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .featureTitle{
@@ -301,7 +303,7 @@
   }
 
   .photo{
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
     max-width: 95%;
@@ -467,7 +469,7 @@
   }
 
   .photo{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     max-width: 95%;
@@ -625,7 +627,7 @@
   }
 
   .photo{
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: 60px;
   }
 
@@ -779,7 +781,7 @@
   }
 
   .photo{
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 70px;
   }
 

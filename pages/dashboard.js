@@ -104,7 +104,7 @@ export default function Dashboard(){
             </div>
 
             <div className={styles.photo}>
-              <img src="/images/dash/page.png"/>
+              <img src="/images/dash/desktop.png"/>
             </div>
 
             <div className = {styles.featureTitle}> features. </div>
