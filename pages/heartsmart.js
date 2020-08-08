@@ -3,6 +3,7 @@ import styles from '../components/heartsmart.module.css'
 import Link from 'next/link'
 import Layout from '../components/layout.js'
 import SlowLink from '../utils/SlowLink.js'
+import DelayLoop from '../utils/DelayLoop.js'
 
 export default function Dashboard(){
 
@@ -65,7 +66,7 @@ export default function Dashboard(){
             <div className={styles.description}>
             Heart failure, or the condition in which one’s heart cannot adequately pump blood through the body, causes one million hospitalizations every year and costs the U.S. $30.7 billion annually. Although research has shown that hospitalizations can be avoided with proper preventive care, 25% of patients still experience readmissions within 30 days of their initial release.
             <p></p>
-            I, along with four other students, decided to tackle this problem of hospital readmission as part of the BioMaker Design Workshop at MIT. After reading dozens of papers on heart failure prevention and researching existing health monitoring devices, we found that <span style={{fontWeight: '600'}}>there are currently no devices able to both monitor heart health and identify if symptoms of worsening heart failure occur.</span>
+            Four other students and I decided to tackle this problem of hospital readmission as part of the BioMaker Design Workshop at MIT. After reading dozens of papers on heart failure prevention and researching existing health monitoring devices, we found that <span style={{fontWeight: '600'}}>there are currently no devices able to both monitor heart health and identify if symptoms of worsening heart failure occur.</span>
             <p></p>
             Given that the majority of heart failure patients are over the age of 65, we wanted to design a solution that would be <span style={{fontWeight: '600'}}>easy-to-use, non-invasive, and low-cost.</span> Furthermore, we needed our device to measure <span style={{fontWeight: '600'}}>five key parameters in order to effectively monitor heart health:</span>
             <p></p>
@@ -154,7 +155,7 @@ export default function Dashboard(){
             <div className = {styles.featureTitle}> demo. </div>
 
             <div className={styles.photo}>
-              <video muted controls width="1100">
+              <video muted controls>
                   <source src="/heartsmart/demo.mp4"
                     type="video/mp4">
                   </source>
@@ -174,11 +175,11 @@ export default function Dashboard(){
                   </div>
                 </div>
               <div className = {styles.featureDemo}>
-                <video autoPlay loop muted controls width="260">
+                <DelayLoop>
                     <source src="/heartsmart/setup.mp4"
                       type="video/mp4">
                     </source>
-                </video>
+                </DelayLoop>
               </div>
             </div>
 
@@ -196,11 +197,11 @@ export default function Dashboard(){
                   </div>
                 </div>
               <div className = {styles.featureDemo}>
-                <video autoPlay loop muted controls width="260">
+                <DelayLoop>
                     <source src="/heartsmart/readings_recs.mp4"
                       type="video/mp4">
                     </source>
-                </video>
+                </DelayLoop>
               </div>
             </div>
 
@@ -213,11 +214,11 @@ export default function Dashboard(){
                   </div>
                 </div>
                   <div className = {styles.featureDemo}>
-                  <video autoPlay loop muted controls width="260">
-                      <source src="/heartsmart/companion.mp4"
-                        type="video/mp4">
-                      </source>
-                    </video>
+                    <DelayLoop>
+                        <source src="/heartsmart/companion.mp4"
+                          type="video/mp4">
+                        </source>
+                    </DelayLoop>
                 </div>
             </div>
 
@@ -231,12 +232,12 @@ export default function Dashboard(){
                   Both patients and physicians can add new medications directly into the app. <span style={{fontWeight: '600'}}>Each medication includes fields to write down the dose, purpose, and any additional notes the doctor might have.</span> This way, if a patient forgets how much to take, they can easily find it in the app.
                   </div>
                 </div>
-                <div className = {styles.featureDemo}>
-                  <video autoPlay loop muted controls width="260">
-                      <source src="/heartsmart/meds_merged.mp4"
-                        type="video/mp4">
-                      </source>
-                    </video>
+                <div className = {`${styles.featureDemo} ${styles.mobile}`}>
+                <DelayLoop>
+                    <source src="/heartsmart/meds_merged.mp4"
+                      type="video/mp4">
+                    </source>
+                </DelayLoop>
                 </div>
             </div>
 

@@ -106,7 +106,6 @@
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -117,7 +116,6 @@
   margin-bottom: 65px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -210,29 +208,6 @@
   max-width: 350px;
 }
 
-.logos{
-  margin-top: 10px;
-  max-width: 1025px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 70px;
-}
-
-.captions{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 37px;
-
-  text-align: center;
-  letter-spacing: 0.02em;
-
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .button{
   margin-top: 100px;
   width: 15vw;
@@ -278,7 +253,7 @@
   .summary{
     margin-left: 15px;
     margin-right: inherit;
-    max-width: 90%;
+    max-width: 93%;
     padding-left: 20px;
     border-left-width: 12px;
   }
@@ -321,7 +296,7 @@
     margin-bottom: 12px;
   }
 
-  .features{
+  .parameters{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -335,29 +310,53 @@
     font-size: 80px;
     width: 50vw;
     height: 50vw;
+    margin-right: 0px;
 
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
   }
 
+  .parameterText{
+    font-size: 23px;
+    line-height: 31px;
+  }
+
+  .featureCircle{
+    font-size: 80px;
+    width: 58vw;
+    height: 58vw;
+    margin-right: 0px;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .featuresFirstRow{
+    flex-direction: column;
+  }
+
+  .featuresSecondRow{
+    margin-bottom: 35px;
+    flex-direction: column;
+  }
+
   .sectionText{
+    max-width: 180px;
     margin-top: 15px;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 19px;
+    line-height: 26px;
   }
 
   .photo{
     margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 95%;
     margin-bottom: 35px;
   }
 
   .featureTitle{
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .featureText{
@@ -374,46 +373,22 @@
     font-size: 29px;
   }
 
+  .recSubtitle{
+    margin-top: 30px;
+    font-size: 29px;
+  }
+
   .featureDescription{
     font-size: 17px;
   }
 
-  .featureImg{
-    margin-left: 0px;
+  .featureDemo{
     margin-bottom: 50px;
-    width: 95%;
+    width: 100%;
   }
 
-  .weather{
-    margin-left: 0px;
-    width: 95%;
-    margin-bottom: 10px;
-  }
-
-  .subway{
-    margin-left: 0px;
-    width: 95%;
-  }
-
-  .logos{
-    margin-top: 10px;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 38px;
-  }
-
-  .captions{
-    font-size: 19px;
-    line-height: 27px;
-
-    text-align: center;
-    letter-spacing: 0.02em;
-
-    margin-top: 12px;
-    margin-bottom: 12px;
+  .mobile{
+    margin-bottom: 5px;
   }
 
   .button{
