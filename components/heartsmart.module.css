@@ -326,6 +326,8 @@
     font-size: 80px;
     width: 58vw;
     height: 58vw;
+    max-width: 240px;
+    max-height: 240px;
     margin-right: 0px;
 
     display: flex;
@@ -627,28 +629,57 @@
     margin-bottom: 12px;
   }
 
-  .features{
+  .parameters{
+    flex-direction: row;
     margin-top: 30px;
     margin-bottom: 70px;
   }
 
   .circle{
     font-size: 50px;
-    width: 18vw;
-    height: 18vw;
+    width: 16vw;
+    height: 16vw;
 
-    margin-right: 20px;
+    margin-right: 10px;
+  }
+
+  .parameterText{
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .featureCircle{
+    font-size: 75px;
+    width: 27vw;
+    height: 27vw;
+    max-width: 220px;
+    max-height: 220px;
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .featuresFirstRow{
+    flex-direction: row;
+  }
+
+  .featuresSecondRow{
+    margin-bottom: 30px;
+    flex-direction: row;
   }
 
   .sectionText{
-    margin-top: 12px;
-    font-size: 17px;
-    line-height: 26px;
+    max-width: 150px;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .photo{
-    margin-top: 50px;
-    margin-bottom: 55px;
+    margin-top: 30px;
+    margin-bottom: 45px;
   }
 
   .featureTitle{
@@ -663,10 +694,15 @@
 
   .blurbMargins{
     margin-right: 0px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .featureSubtitle{
+    font-size: 36px;
+  }
+
+  .recSubtitle{
+    margin-top: 35px;
     font-size: 36px;
   }
 
@@ -674,42 +710,14 @@
     font-size: 23px;
   }
 
-  .featureImg{
-    margin-left: 0px;
-    margin-bottom: 60px;
-    width: 85%;
+  .featureDemo{
+    margin-left: 70px;
+    margin-bottom: 50px;
+    width: 100%;
   }
 
-  .weather{
-    margin-left: 0px;
-    width: 85%;
-    margin-bottom: 40px;
-  }
-
-  .subway{
-    margin-left: 0px;
-    width: 85%;
-  }
-
-  .logos{
-    margin-top: 10px;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 45px;
-  }
-
-  .captions{
-    font-size: 21px;
-    line-height: 29px;
-
-    text-align: center;
-    letter-spacing: 0.02em;
-
-    margin-top: 15px;
-    margin-bottom: 15px;
+  .mobile{
+    margin-bottom: 0px;
   }
 
   .button{
@@ -737,7 +745,7 @@
   .summary{
     margin-left: 45px;
     margin-right: inherit;
-    max-width: 90%;
+    max-width: 95%;
     padding-left: 45px;
     border-left-width: 16px;
   }
@@ -786,23 +794,57 @@
     margin-bottom: 70px;
   }
 
+  .parameters{
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+
   .circle{
     font-size: 70px;
-    width: 18vw;
-    height: 18vw;
+    width: 16vw;
+    height: 16vw;
 
-    margin-right: 20px;
+    margin-right: 10px;
+  }
+
+  .parameterText{
+    font-size: 21px;
+    line-height: 29px;
+  }
+
+  .featureCircle{
+    font-size: 80px;
+    width: 27vw;
+    height: 27vw;
+    max-width: 240px;
+    max-height: 240px;
+    margin-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .featuresFirstRow{
+    flex-direction: row;
+  }
+
+  .featuresSecondRow{
+    margin-bottom: 30px;
+    flex-direction: row;
   }
 
   .sectionText{
+    max-width: 190px;
     margin-top: 12px;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 22px;
+    line-height: 30px;
   }
 
   .photo{
-    margin-top: 60px;
-    margin-bottom: 65px;
+    margin-top: 30px;
+    margin-bottom: 55px;
   }
 
   .featureTitle{
@@ -817,29 +859,27 @@
     margin-bottom: 70px;
   }
 
+  .featureSubtitle{
+    font-size: 36px;
+  }
+
+  .recSubtitle{
+    margin-top: 28px;
+    font-size: 36px;
+  }
+
   .featureDescription{
     font-size: 23px;
   }
 
-  .logos{
-    margin-top: 10px;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 45px;
+  .featureDemo{
+    margin-left: 40px;
+    margin-bottom: 50px;
+    width: 100%;
   }
 
-  .captions{
-    font-size: 23px;
-    line-height: 31px;
-
-    text-align: center;
-    letter-spacing: 0.02em;
-
-    margin-top: 18px;
-    margin-bottom: 18px;
+  .mobile{
+    margin-bottom: 0px;
   }
 
   .button{
