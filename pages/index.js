@@ -123,10 +123,12 @@ export default function Home(){
 
           {/* heartsmart socks */}
           <div className={styles.item}>
-            <div className={`${styles.rectangle} ${styles.heartRect} ${styles.grow}`}>
-              <img src="/images/projects/heartsmart.png" className={styles.heartIcon}/>
-            </div>
-            <div className={styles.captions}>HeartSmart Socks</div>
+            <SlowLink href="/heartsmart">
+              <div className={`${styles.rectangle} ${styles.heartRect} ${styles.grow}`}>
+                <img src="/images/projects/new_heartsmart.png" className={styles.heartIcon}/>
+              </div>
+              <div className={styles.captions}>HeartSmart Socks</div>
+            </SlowLink>
           </div>
 
           {/* smart alarm */}
