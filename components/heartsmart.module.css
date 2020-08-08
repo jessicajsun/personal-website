@@ -253,7 +253,7 @@
   .summary{
     margin-left: 15px;
     margin-right: inherit;
-    max-width: 93%;
+    max-width: 90%;
     padding-left: 20px;
     border-left-width: 12px;
   }
@@ -383,12 +383,13 @@
   }
 
   .featureDemo{
+    margin-left: 40px;
     margin-bottom: 50px;
     width: 100%;
   }
 
   .mobile{
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
 
   .button{
@@ -462,14 +463,13 @@
     margin-bottom: 12px;
   }
 
-  .features{
+  .parameters{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-
   }
 
   .circle{
@@ -482,18 +482,41 @@
     margin-bottom: 20px;
   }
 
+  .parameterText{
+    font-size: 23px;
+    line-height: 31px;
+  }
+
+  .featureCircle{
+    font-size: 90px;
+    width: 58vw;
+    height: 58vw;
+    margin-right: 0px;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .featuresFirstRow{
+    flex-direction: column;
+  }
+
+  .featuresSecondRow{
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+
   .sectionText{
+    max-width: 210px;
     margin-top: 15px;
-    font-size: 27px;
-    line-height: 35px;
+    font-size: 24px;
+    line-height: 31px;
   }
 
   .photo{
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 95%;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 
   .featureTitle{
@@ -508,10 +531,15 @@
 
   .blurbMargins{
     margin-right: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   .featureSubtitle{
+    font-size: 34px;
+  }
+
+  .recSubtitle{
+    margin-top: 35px;
     font-size: 34px;
   }
 
@@ -519,42 +547,14 @@
     font-size: 20px;
   }
 
-  .featureImg{
-    margin-left: 0px;
+  .featureDemo{
+    margin-left: 60px;
     margin-bottom: 50px;
-    width: 95%;
+    width: 100%;
   }
 
-  .weather{
-    margin-left: 0px;
-    width: 95%;
-    margin-bottom: 10px;
-  }
-
-  .subway{
-    margin-left: 0px;
-    width: 95%;
-  }
-
-  .logos{
-    margin-top: 10px;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 35px;
-  }
-
-  .captions{
-    font-size: 18px;
-    line-height: 26px;
-
-    text-align: center;
-    letter-spacing: 0.02em;
-
-    margin-top: 15px;
-    margin-bottom: 15px;
+  .mobile{
+    margin-bottom: 0px;
   }
 
   .button{
