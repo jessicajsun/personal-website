@@ -64,7 +64,7 @@ export default function Dashboard(){
 
             {/* intro */}
             <div className={styles.description}>
-            Heart failure, or the condition in which one’s heart cannot adequately pump blood through the body, causes one million hospitalizations every year and costs the U.S. $30.7 billion annually. Although research has shown that hospitalizations can be avoided with proper preventive care, 25% of patients still experience readmissions within 30 days of their initial release.
+            Heart failure, or the condition in which one’s heart cannot adequately pump blood through the body, causes one million hospitalizations every year and costs the U.S. $30.7 billion annually. Although research has shown that hospitalizations can be avoided with proper preventive care, <span style={{fontWeight: '600'}}>25% of patients still experience readmissions within 30 days of their initial release.</span>
             <p></p>
             Four other students and I decided to tackle this problem of hospital readmission as part of the BioMaker Design Workshop at MIT. After reading dozens of papers on heart failure prevention and researching existing health monitoring devices, we found that <span style={{fontWeight: '600'}}>there are currently no devices able to both monitor heart health and identify if symptoms of worsening heart failure occur.</span>
             <p></p>
