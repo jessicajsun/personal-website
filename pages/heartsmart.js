@@ -5,7 +5,7 @@ import Layout from '../components/layout.js'
 import SlowLink from '../utils/SlowLink.js'
 import DelayLoop from '../utils/DelayLoop.js'
 
-export default function Dashboard(){
+export default function HeartSmart(){
 
   return (
       <Layout>

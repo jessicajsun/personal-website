@@ -133,10 +133,12 @@ export default function Home(){
 
           {/* smart alarm */}
           <div className={styles.item}>
-            <div className={`${styles.rectangle} ${styles.alarmRect} ${styles.grow}`}>
-                <img src="/images/projects/alarm.png" className={styles.alarmIcon}/>
-            </div>
-            <div className={styles.captions}>Smart Alarm</div>
+            <SlowLink href="/smartalarm">
+              <div className={`${styles.rectangle} ${styles.alarmRect} ${styles.grow}`}>
+                  <img src="/images/projects/alarm.png" className={styles.alarmIcon}/>
+              </div>
+              <div className={styles.captions}>Smart Alarm</div>
+            </SlowLink>
           </div>
 
 
