@@ -83,10 +83,12 @@ export default function Home(){
 
           {/* hackmit */}
           <div className={styles.item}>
-            <div className={`${styles.rectangle} ${styles.hackRect} ${styles.grow}`}>
-              <img src="/images/projects/hack.png"/>
-            </div>
-            <div className={styles.captions}>HackMIT</div>
+            <SlowLink href="/hackmit">
+              <div className={`${styles.rectangle} ${styles.hackRect} ${styles.grow}`}>
+                <img src="/images/projects/hack.png"/>
+              </div>
+              <div className={styles.captions}>HackMIT</div>
+            </SlowLink>
           </div>
 
           {/* blueprint */}
