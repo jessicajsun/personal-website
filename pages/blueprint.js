@@ -10,7 +10,7 @@ export default function SmartAlarm(){
       <Layout>
 
         <Head>
-          <title>blueprint.</title>
+          <title>blueprint</title>
         </Head>
 
         <main>

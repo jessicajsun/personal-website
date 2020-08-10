@@ -10,7 +10,7 @@ export default function SmartAlarm(){
       <Layout>
 
         <Head>
-          <title>hackmit.</title>
+          <title>hackmit</title>
         </Head>
 
         <main>
