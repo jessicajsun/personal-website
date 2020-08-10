@@ -21,7 +21,7 @@ export default function Barclays(){
 
           <div className={styles.summary}>
             <div className={styles.title}>munch.</div>
-            <div className={styles.subtitle}>I’m currently building a better restaurant recommendation platform for college diners with allergies. Recap coming soon...</div>
+            <div className={styles.subtitle}>I’m currently building a better restaurant recommendation platform for college diners with allergies! Recap coming soon...</div>
           </div>
 
         </section>
