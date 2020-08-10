@@ -68,10 +68,6 @@ export default function SmartAlarm(){
               <p></p>
             </div>
 
-            <div className={styles.photoGrid}>
-
-            </div>
-
             <div className={styles.photoTopRow}>
               <img className={styles.column} src="/images/hack/hacking.jpg"/>
               <img className={styles.column} src="/images/hack/dog.jpg"/>
