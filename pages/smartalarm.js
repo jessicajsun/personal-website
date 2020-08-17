@@ -10,7 +10,7 @@ export default function SmartAlarm(){
       <Layout>
 
         <Head>
-          <title>smart alarm.</title>
+          <title>smart alarm</title>
         </Head>
 
         <main>
