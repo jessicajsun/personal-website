@@ -146,13 +146,14 @@
   }
 
   .circleContainer{
+    margin-top: 10px;
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 32%;
     padding-right: 32%;
     max-width: 100%;
-    padding-top: 12vh;
-    padding-bottom: 12vh;
+    padding-top: 10vh;
+    padding-bottom: 18vh;
     background-color: #F5F5F5;
   }
 }
