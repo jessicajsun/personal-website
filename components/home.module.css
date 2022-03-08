@@ -128,7 +128,7 @@
 @media screen and (min-width:768px) and (max-width:991.98px) {
   .topPanel{
     flex-direction: column;
-    margin-top: 0px;
+    margin-top: 10px;
   }
 
   .intro {
@@ -148,8 +148,8 @@
   .circleContainer{
     margin-left: 0px;
     margin-right: 0px;
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 32%;
+    padding-right: 32%;
     max-width: 100%;
     padding-top: 14vh;
     padding-bottom: 14vh;
