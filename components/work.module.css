@@ -1,9 +1,3 @@
-.centerScreen{
-  display: flex;
-  height: 70vh;
-  justify-content: center;
-}
-
 .topPanel{
   display: flex;
   flex-direction: row;
@@ -184,5 +178,13 @@
   .me{
     margin-left: 4.5vw;
     padding-left: 4vw;
+  }
+}
+
+@media screen and (min-width:1440px) and (min-height: 750px){
+  .centerScreen{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
   }
 }
