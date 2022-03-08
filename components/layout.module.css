@@ -4,6 +4,25 @@
   height: auto;
 }
 
+.grayRectangle{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.left{
+  width: 64%;
+}
+
+.right{
+  width: 36%;
+  background-color: #F5F5F5;
+}
+
 .menu{
   display: none;
 }
@@ -14,7 +33,7 @@
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-around;
-  margin-top: 12px;
+  margin-top: 16px;
   margin-bottom: 50px;
   padding-left: 30px;
   padding-right: 5px;
@@ -26,10 +45,10 @@
   flex-basis: 1400px;
   max-width: 1100px;
   margin-left: auto;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 38px;
-  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.00em;
 }
 
 .navItems{
@@ -38,7 +57,6 @@
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-between;
-  padding-left: 40px;
   flex-basis: 400px;
   margin-right: auto;
   flex-grow: 2;
@@ -47,25 +65,78 @@
 .tab {
   order: 1;
   flex-grow: 1;
-  flex-basis: 150px;
   font-weight: 600;
-  font-size: 21px;
-  line-height: 38px;
-  letter-spacing: 0.02em;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 25px;
+  letter-spacing: 0.00em;
 }
 
 .menuActive {
-  color: #2191FB;
+  text-decoration: underline;
 }
 
 .menuInactive:hover{
-  color: #FC3F42;
+  text-decoration: underline;
 }
 
 @media screen and (max-width:575.98px) {
+  .right{
+    background-color: #FFFFFF;
+  }
+
   .navBar{
     padding-left: 25px;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
+    margin-top: 0px;
+  }
+
+  .navItems{
+    z-index: 2;
+    display: block;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    left: 0px;
+    right: 0px;
+    padding-left: 0px;
+    padding-top: 95px;
+    background-color: #ffffff;
+  }
+  .name{
+    margin-top: 45px;
+    z-index: 3;
+  }
+  .tab{
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+  }
+
+  .menu{
+    margin-top: 30px;
+    z-index: 3;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    font-size: 22px;
+    line-height: 32px;
+    float: right;
+    position: relative;
+  }
+
+}
+
+@media screen and (min-width:576px) and (max-width:767.98px) {
+  .right{
+    background-color: #FFFFFF;
+  }
+
+  .navBar{
+    padding-left: 25px;
+    margin-bottom: 45px;
     margin-top: 0px;
 
   }
@@ -84,9 +155,8 @@
     background-color: #ffffff;
   }
   .name{
-    margin-top: 15px;
+    margin-top: 45px;
     z-index: 3;
-    font-size: 22px;
   }
   .tab{
     flex-basis: 100%;
@@ -96,7 +166,7 @@
   }
 
   .menu{
-    margin-top: 11px;
+    margin-top: 30px;
     z-index: 3;
     display: flex;
     align-items: flex-end;
@@ -104,55 +174,6 @@
     font-size: 22px;
     line-height: 32px;
     float: right;
-    margin-right: 5px;
-    position: relative;
-  }
-
-}
-
-@media screen and (min-width:576px) and (max-width:767.98px) {
-  .navBar{
-    padding-left: 25px;
-    margin-bottom: 60px;
-    margin-top: 0px;
-
-  }
-
-  .navItems{
-    z-index: 2;
-    display: block;
-    position: absolute;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-end;
-    left: 0px;
-    right: 0px;
-    padding-left: 0px;
-    padding-top: 105px;
-    background-color: #ffffff;
-  }
-  .name{
-    margin-top: 15px;
-    z-index: 3;
-    font-size: 27px;
-  }
-  .tab{
-    flex-basis: 100%;
-    text-align: center;
-    margin-bottom: 25px;
-    background-color: #ffffff;
-  }
-
-  .menu{
-    margin-top: 10px;
-    z-index: 3;
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-    font-size: 25px;
-    line-height: 35px;
-    float: right;
-    margin-right: 5px;
     position: relative;
   }
 
@@ -186,278 +207,28 @@
 }
 
 @media screen and (min-width:768px) and (max-width:991.98px) {
-  .navBar{
-    list-style-type: none;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin-top: 12px;
-    margin-bottom: 60px;
-    padding-left: 30px;
-    padding-right: 5px;
+  .right{
+    background-color: #FFFFFF;
   }
-
-  .name {
-    order: 0;
-    flex-grow: 10;
-    flex-basis: 1300px;
-    margin-left: auto;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 38px;
-    letter-spacing: 0.02em;
-  }
-
-  .navItems{
-    list-style-type: none;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding-left: 40px;
-    flex-basis: 700px;
-    margin-right: auto;
-    flex-grow: 2;
-  }
-
-  .tab {
-    order: 1;
-    flex-grow: 1;
-    flex-basis: 150px;
-    font-weight: 600;
-    font-size: 21px;
-    line-height: 38px;
-    letter-spacing: 0.02em;
-  }
-
 }
 
 @media screen and (min-width:992px) and (max-width:1199.98px) {
-  .navBar{
-    list-style-type: none;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin-top: 12px;
-    margin-bottom: 60px;
-    padding-left: 30px;
-    padding-right: 5px;
-  }
 
-  .name {
-    order: 0;
-    flex-grow: 10;
-    flex-basis: 1300px;
-    margin-left: auto;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 38px;
-    letter-spacing: 0.02em;
-  }
-
-  .navItems{
-    list-style-type: none;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding-left: 40px;
-    flex-basis: 500px;
-    margin-right: auto;
-    flex-grow: 2;
-  }
-
-  .tab {
-    order: 1;
-    flex-grow: 1;
-    flex-basis: 150px;
-    font-weight: 600;
-    font-size: 21px;
-    line-height: 38px;
-    letter-spacing: 0.02em;
-  }
 }
 
 @media screen and (min-width: 1200px){
   .navItems{
-    max-width: 400px;
+    max-width: 350px;
   }
 }
 
-
-
-.banner{
-  margin-top: 150px;
-}
-
-.bottomBlurb{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.connect{
-  margin-left: auto;
-  text-align: right;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 38px;
-  letter-spacing: 0.02em;
-  padding-right: 15px;
-}
-
-.chat{
-  margin-right: auto;
-  text-align: left;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
-}
-
-.socials{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 650px;
-  font-size: 18px;
-  margin-bottom: 65px;
-}
-
-.socialIcon:hover > a > i {
-  color: #FC3F42;
-}
-
-@media screen and (max-width:575.98px) {
-  .banner{
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+@media screen and (min-width: 1440px){
+  .left{
+    width: calc(50% + 202px);
   }
 
-  .bottomBlurb{
-    flex-direction: column;
-    margin-bottom: 8vw;
+  .right{
+    width: calc(50% - 202px);
   }
 
-  .connect{
-    text-align: left;
-    margin-left: inherit;
-    margin-right: auto;
-    font-size: 28px;
-    line-height: 38px;
-    padding-right: 0px;
-    margin-bottom: 10px;
-
-  }
-
-  .chat{
-    width: 100%;
-    margin-right: auto;
-    padding-right: 10vw;
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  .socials{
-    margin-left: inherit;
-    margin-right: inherit;
-    margin-bottom: 60px;
-  }
-
-}
-
-@media screen and (min-width:576px) and (max-width:767.98px) {
-  .banner{
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .bottomBlurb{
-    flex-direction: column;
-    margin-bottom: 8vw;
-  }
-
-  .connect{
-    text-align: left;
-    margin-left: inherit;
-    margin-right: auto;
-    font-size: 32px;
-    line-height: 42px;
-    padding-right: 0px;
-    margin-bottom: 10px;
-
-  }
-
-  .chat{
-    width: 100%;
-    margin-right: auto;
-    padding-right: 10vw;
-    font-size: 22px;
-    line-height: 27px;
-  }
-
-  .socials{
-    margin-left: inherit;
-    margin-right: inherit;
-    margin-bottom: 60px;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:991.98px) {
-  .banner{
-    margin-top: 150px;
-  }
-
-  .bottomBlurb{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-
-  .connect{
-    margin-left: auto;
-    text-align: right;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: 0.02em;
-    padding-right: 15px;
-  }
-
-  .chat{
-    margin-right: auto;
-    text-align: left;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.02em;
-  }
-
-  .socials{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
-    font-size: 18px;
-    margin-bottom: 65px;
-  }
 }

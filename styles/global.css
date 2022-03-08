@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  line-height: 25px;
+  font-size: 14px;
+  height: 100%;
 }
 
 * {
@@ -19,7 +20,6 @@ a {
   text-decoration: none;
   outline: 0;
 }
-
 
 img {
   max-width: 100%;
