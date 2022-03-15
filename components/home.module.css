@@ -24,6 +24,11 @@
   color: #000000;
 }
 
+.link:hover{
+  text-decoration: underline;
+  color: #43B190;
+}
+
 .socials{
   display: flex;
   flex-direction: row;

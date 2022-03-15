@@ -25,7 +25,7 @@ export default function Work(){
                     <div className={styles.workTitle}>Where I've worked.</div>
 
                       <ul className={styles.list}>
-                        <li className={styles.work}>Gather <span style={{color:"#797979"}}>- Building a delightful, all-in-one events platform.</span></li>
+                        <li className={styles.work}><a href="https://www.gather.town"><span className={styles.link}>Gather</span></a><span style={{color:"#797979"}}> - Building a delightful, all-in-one events platform.</span></li>
                         <li className={styles.work}>Barclays <span style={{color:"#797979"}}>- Migrated the production reporting pipeline for counterparty credit risk.</span></li>
                         <li className={styles.work}>Moderna <span style={{color:"#797979"}}>- Predicted adverse immune responses from novel drug sequences.</span></li>
                         <li className={styles.work}>Mastercard <span style={{color:"#797979"}}>- Streamlined internal HR business processes to reduce ticket workload.</span></li>

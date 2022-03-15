@@ -55,7 +55,7 @@ export default class Layout extends React.Component{
 
 
       <Head>
-        <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/sun_2600-fe0f.png"/>
+        <link rel="icon" href="favicon.ico"/>
         <title>Jessica Sun</title>
 
         <meta
