@@ -90,7 +90,7 @@ export default class Layout extends React.Component{
           <ul className={`${styles.navItems} ${this.state.isMenuOpen ? `${styles.fadeIn} ${styles.shadow}` : ""}`}>
             <li className={tabClassName}><ActiveLink href="/">About</ActiveLink></li>
             <li className={tabClassName}><ActiveLink href="/work">Work</ActiveLink></li>
-            <li className={`${tabClassName}`}><ActiveLink href="/Jessica_Sun.pdf">Resume</ActiveLink></li>
+            <li className={`${tabClassName}`}><ActiveLink href="/Jessica Sun.pdf">Resume</ActiveLink></li>
           </ul>
         </ul>
 
