@@ -29,7 +29,7 @@ export default function Home(){
                       </p>
 
                       <p>
-                      Currently the first product manager at <a href="https://www.gather.town"><span className={styles.link} style={{color: "#43B190"}}>Gather</span></a>, where I lead the Events team.
+                      Currently product manager at Retool. Previously the first product manager at <a href="https://www.gather.town"><span className={styles.link} style={{color: "#43B190"}}>Gather</span></a>, where I lead the Events team.
                       Previously worked at <span style={{color: "#30BDD9"}}>Barclays</span>, <span style={{color: "#30BDD9"}}>Moderna</span>, and <span style={{color: "#30BDD9"}}>Mastercard</span>.
                       Studied computer science and molecular biology at MIT.
                       </p>
