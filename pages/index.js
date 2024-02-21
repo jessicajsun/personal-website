@@ -17,7 +17,6 @@ export default function Home(){
 
             <section className={styles.topPanel}>
 
-                {/* left */}
                 <div className={styles.intro}>
 
                 {/*bio*/}
@@ -25,17 +24,17 @@ export default function Home(){
                     <span style={{fontWeight: "bold", fontSize: "24px"}}> Hi! I’m Jess.</span>
                       <p>
                       Passionate about building
-                      <span style={{color: "#43B190"}}> impactful products</span> and designing <span style={{color: "#30BDD9"}}> engaging experiences.</span>
+                      <span style={{color: "#3EA384"}}> impactful products</span> and designing <span style={{color: "#3EA384"}}> engaging experiences.</span>
                       </p>
 
                       <p>
-                      Currently product manager at Retool. Previously the first product manager at <a href="https://www.gather.town"><span className={styles.link} style={{color: "#43B190"}}>Gather</span></a>, where I lead the Events team.
-                      Previously worked at <span style={{color: "#30BDD9"}}>Barclays</span>, <span style={{color: "#30BDD9"}}>Moderna</span>, and <span style={{color: "#30BDD9"}}>Mastercard</span>.
-                      Studied computer science and molecular biology at MIT.
+                      Currently a product manager at <a href="https://www.retool.com"><span className={styles.link} style={{color: "#26B3CF"}}>Retool</span></a>, where I lead the IDE team. Previously the first product manager at <a href="https://www.gather.town"><span className={styles.link} style={{color: "#26B3CF"}}>Gather</span></a> and
+                      engineer at <span style={{color: "#26B3CF"}}>Barclays</span>, <span style={{color: "#26B3CF"}}>Moderna</span>, and <span style={{color: "#26B3CF"}}>Mastercard</span>.
+                      Studied computer science and molecular biology at <span style={{color: "#26B3CF"}}>MIT</span>.
                       </p>
 
                       <p>
-                      St. Louis native living in San Francisco. Big fan of black hoodies, reality TV, and modern art. Can usually find me running to alternative music or baking cakes.
+                      St. Louis native living in San Francisco. Big fan of black hoodies, reality TV, and modern art. Can usually find me weightlifting, running, or baking.
                       </p>
                   </div>
 
