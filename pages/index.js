@@ -69,7 +69,7 @@ export default function Home(){
                 </div>
 
                 {/* right */}
-                <div class={styles.grayRectangle}>
+                <div className={styles.grayRectangle}>
                   <div className={styles.circleContainer}>
                     <img src="/images/jan22.png"/>
                   </div>

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import React from 'react'
 
 function ActiveLink({ children, href }) {
   const router = useRouter()
@@ -20,7 +21,7 @@ function ActiveLink({ children, href }) {
 
 export const siteTitle = 'Jessica Sun'
 
-export default class Layout extends React.Component{
+export default class Layout extends React.Component {
   constructor(props){
     super(props);
     this.state={isMenuOpen: false};
@@ -46,7 +47,6 @@ export default class Layout extends React.Component{
       </div>;
 
   return (
-
     <React.Fragment>
       <div className={styles.grayRectangle}>
         <div className={styles.left}></div>
@@ -82,7 +82,7 @@ export default class Layout extends React.Component{
       <nav>
 
         <ul className={styles.navBar}>
-          <li className={styles.name}><Link href="/"><a>Jessica Sun</a></Link></li>
+          <li className={styles.name}><Link href="/">Jessica Sun</Link></li>
           <div onClick={this.menuToggle}>
             {menuButton}
           </div>
@@ -98,6 +98,6 @@ export default class Layout extends React.Component{
 
         {this.props.children}
       </React.Fragment>
-    );
+  );
   }
 }

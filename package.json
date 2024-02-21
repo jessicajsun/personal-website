@@ -11,13 +11,12 @@
     "bootstrap": "^4.5.0",
     "date-fns": "^2.14.0",
     "gray-matter": "^4.0.2",
-    "next": "9.3.5",
-    "next-ga": "^2.3.4",
-    "react": "16.13.1",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
     "react-bootstrap": "^1.0.1",
-    "react-dom": "16.13.1",
-    "react-ga": "^3.0.0",
-    "remark": "^12.0.0",
-    "remark-html": "^11.0.2"
+    "react-dom": "^18.2.0",
+    "react-ga": "^3.3.1",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   }
 }
