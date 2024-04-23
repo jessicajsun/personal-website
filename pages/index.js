@@ -28,7 +28,7 @@ export default function Home(){
                       </p>
 
                       <p>
-                      Currently a product manager at <a href="https://www.retool.com"><span className={styles.link} style={{color: "#26B3CF"}}>Retool</span></a>, where I lead the IDE team. Previously the first product manager at <a href="https://www.gather.town"><span className={styles.link} style={{color: "#26B3CF"}}>Gather</span></a> and
+                      Currently leading the core product team at <a href="https://www.retool.com"><span className={styles.link} style={{color: "#26B3CF"}}>Retool</span></a>. Previously the first product manager at <a href="https://www.gather.town"><span className={styles.link} style={{color: "#26B3CF"}}>Gather</span></a> and
                       engineer at <span style={{color: "#26B3CF"}}>Barclays</span>, <span style={{color: "#26B3CF"}}>Moderna</span>, and <span style={{color: "#26B3CF"}}>Mastercard</span>.
                       Studied computer science and molecular biology at <span style={{color: "#26B3CF"}}>MIT</span>.
                       </p>
